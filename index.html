@@ -6,6 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "RwmexWi7OP-t5IsPE",
+      });
+   })();
+</script>
 </head>
 <body>
     <header class="header">
@@ -88,15 +98,15 @@
                 <div class="education-box">
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2017 - 2018</div>
+                            <div class="year"><i class='bx bxs-calendar'></i>> 2022 - 2023</div>
                             <h3>Mater Degree - Holberton</h3>
-                            <p>Holberton or AlxAfrica was where I gained experience in the mastery of C programming language as a software Engineer Cohort 9</p>
+                            <p>Holberton or ALX Africa was where I gained experience in the mastery of C programming language as a software Engineer Cohort 9</p>
                         </div>
                     </div>
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2017 - 2018</div>
+                            <div class="year"><i class='bx bxs-calendar'></i>> 2024 - Present</div>
                             <h3>Bachelor's Degree - Brigham Young University</h3>
                             <p>Brigham Young University is a private research university in provo, utah united state. Studied software development.</p>
                         </div>
@@ -104,10 +114,11 @@
 
                     <div class="education-content">
                         <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2017 - 2018</div>
+                            <div class="year"><i class='bx bxs-calendar'></i>> 2023 - 2024</div>
                             <h3>National Diploma - YabaTech</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                            ea! Neque, nesciunt.</p>
+                            <p>Yaba college of Education, founded in 1947, and is Nigeria's first
+                                higher educational institution, located at Yaba Lagos Nigeria.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -117,28 +128,29 @@
                     <div class="education-box">
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2017 - 2018</div>
-                                <h3>Web Development - Company</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                                 nam blanditiis quibusdam dolor sint possimus quam consequuntur ea! Neque, nesciunt.</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>> 2018 - 2020</div>
+                                <h3>Web Development - Hagital</h3>
+                                <p>- Responsible for designing new user interfacing feature<br> - Building reusable codes<br> 
+                                    - Determining the structure and design of webpages<br> 
+                                </p>
                             </div>
                         </div>
     
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2017 - 2018</div>
-                                <h3>Web Development - Company</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                                 nam blanditiis quibusdam dolor sint possimus quam consequuntur ea! Neque, nesciunt.</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>> 2020 - 2021</div>
+                                <h3>UI/UX Designer - Company</h3>
+                                <p>- Designed beautiful and user friendly pages ranging from Web3, Fintech etc<br> 
+                                    - Colaborated with the developer to bring all of the beautiful desgins to reality</p>
                             </div>
                         </div>
     
                         <div class="education-content">
                             <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2017 - 2018</div>
-                                <h3>Web Development - Company</h3>
-                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
-                                 nam blanditiis quibusdam dolor sint possimus quam consequuntur ea! Neque, nesciunt.</p>
+                                <div class="year"><i class='bx bxs-calendar'></i>> 2022 - 2023</div>
+                                <h3>Software Engineer - Company</h3>
+                                <p>- Test and debug code to ensure cross-browser compatibility and optimal perfomance<br> 
+                                -   Collaborate with designers and developers to implement user interface</p>
                             </div>
                         </div>
                     </div>
@@ -220,11 +232,11 @@
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" id="fullName"   placeholder="Full Name" required>
                     <span class="focus"></span>
                 </div>
                 <div class="input-field">
-                    <input type="text" placeholder="Email Address" required>
+                    <input type="text" id="email"  placeholder="Email Address" required>
                     <span class="focus"></span>
                 </div>
             </div>

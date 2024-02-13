@@ -35,3 +35,22 @@ window.onscroll = () => {
     navbar.classList.remove('active');
     
 }
+
+function sendMail(){
+    var params = {
+        name: document.getElementById("fullName").value ,
+    }
+}
+
+const serviceID = "service_l7t6rhs";
+const templateID = "template_1edf83k";
+
+emailjs.send(serviceID,templateID,params)
+.then(
+    res =>{
+        document.getElementById("name") = "";
+        document.getElementById("email") = "";
+        console.log(res);
+        alert("your message sent successfully");
+    }
+)
