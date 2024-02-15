@@ -38,19 +38,17 @@ window.onscroll = () => {
 
 function sendMail(){
     var params = {
-        name: document.getElementById("fullName").value ,
+        from_name: document.getElementById("fullName").value,
+        email_id: document.getElementById("email").value,
+        message: document.getElementById("message").value,
     }
-}
 
-const serviceID = "service_l7t6rhs";
+    const serviceID = "service_l7t6rhs";
 const templateID = "template_1edf83k";
 
-emailjs.send(serviceID,templateID,params)
-.then(
-    res =>{
-        document.getElementById("name") = "";
-        document.getElementById("email") = "";
-        console.log(res);
-        alert("your message sent successfully");
-    }
-)
+emailjs.send("service_l7t6rhs","template_1edf83k", params)
+.then(function (res){
+    alert("success! " + res.status);
+})
+
+}
