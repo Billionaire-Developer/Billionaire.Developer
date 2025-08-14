@@ -451,6 +451,67 @@ span{
 .skills-column:nth-child(2) .skills-content .progress:nth-child(5) .bar span{
     width: 90%;
 }
+
+/* This is the projects category */
+.project-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.project-cards{
+    background: var(--second-bg-color);
+    width: 250px;
+
+    margin: 10px;
+    border-radius: 15px;
+}
+.project-image{
+    background-color:#00abf0;
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-1 {
+    background-image: url('/Images/home.jpg');
+}
+.card-2 {
+    background-image: url();
+}
+.card-3 {
+    background-image: url();
+}
+.card-4 {
+    background-image: url();
+}
+.project-cards h2{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 800;
+}
+.project-cards p{
+    padding: 10px;
+    font-size: 13px;
+}
+.project-cards a{
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+}
+.project-cards:hover{
+    background-color: rgb(39, 53, 63);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+/* This is the Contact category */
 .contact{
     min-height: auto;
     padding-bottom: 7rem;
@@ -514,6 +575,8 @@ span{
 .contact form .btn-box.btns .btn{
     cursor: pointer;
 }
+
+/* Here is the footer category */
 .footer{
     display: flex;
     justify-content: space-between;
