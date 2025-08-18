@@ -515,6 +515,7 @@ span{
 .contact{
     min-height: auto;
     padding-bottom: 7rem;
+    background: var(--second-bg-color);
 }
 .contact form{
     max-width: 70rem;
