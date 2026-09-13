@@ -68,7 +68,7 @@ section{
     display: flex;
     align-items: center;
     padding: 0 9%;
-    background: url(/Images/home.jpg) no-repeat;
+    background: url(/Images/J.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -457,19 +457,20 @@ span{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .project-cards{
     background: var(--second-bg-color);
     width: 250px;
-
-    margin: 10px;
     border-radius: 15px;
+    overflow:hidden;
+    height:fit-content;
 }
 .project-image{
     background-color:#f1fdff;
     height: 170px;
-    margin-bottom: 15px;
     background-size: cover;
+    background-position:center;
     border-radius: 15px 15px 0 0;
 }
 .card-1 {
@@ -486,11 +487,13 @@ span{
 }
 .project-cards h2{
     padding: 10px;
+    margin:0;
     font-size: 12px;
     font-weight: 800;
 }
 .project-cards p{
     padding: 10px;
+    margin: 0;
     font-size: 13px;
 }
 .project-cards a{
