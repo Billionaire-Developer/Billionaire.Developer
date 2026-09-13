@@ -784,3 +784,58 @@ span{
     }
 }
 
+
+
+
+
+
+@media (max-width: 520px){
+    html{
+        font-size: 50%;
+    }
+
+    .home-content h1{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-sci{
+        width: 160px;
+    }
+
+    .home-sci a{
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Projects - 2 cards side by side */
+    .project-list{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+    .project-cards{
+        width: 100%;
+        margin: 0;
+    }
+
+    .project-image{
+        height: 120px;
+    }
+
+    .project-cards h2{
+        font-size: 11px;
+    }
+
+    .project-cards p{
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    .project-cards a{
+        font-size: 10px;
+        padding: 10px 5px;
+        margin: 10px;
+    }
+}
