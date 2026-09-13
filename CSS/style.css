@@ -703,7 +703,7 @@ span{
     .home-imgHover{
         pointer-events: none;
         background: var(--bg-color);
-        opacity: .6;
+        opacity: .0;
     }
 }
 
