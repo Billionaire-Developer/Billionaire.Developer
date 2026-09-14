@@ -57,32 +57,117 @@
         <div class="home-imgHover"></div>
     </section>
 
-<!--About section design-->
+```html
+<!-- About Section -->
+<section class="about" id="about">
 
-    <section class="about" id="about">
-        <h2 class="heading">About <span>Me</span></h2>
-        <div class="about-img">
-            <img src="Images/J.jpg" alt="billionaire_developer">
-            <span class="circle-spin"></span>
+    <div class="section-header">
+        <p class="section-label">ABOUT ME</p>
+
+        <h2 class="heading">
+            Who <span>I Am</span>
+        </h2>
+
+        <p class="section-description">
+            I enjoy turning ideas into reliable, useful, and scalable digital products.
+        </p>
+    </div>
+
+
+    <div class="about-container">
+
+        <!-- About Image -->
+        <div class="about-image-wrapper">
+
+            <div class="about-img">
+                <img
+                    src="Images/J.jpg"
+                    alt="Lawani Jeremiah - Full-Stack Developer"
+                >
+
+                <span class="circle-spin"></span>
+            </div>
+
         </div>
 
+
+        <!-- About Content -->
         <div class="about-content">
-            <h3>Fullstack Developer!</h3>
-            <p>I am a highly accomplished, skilled and knowledgeable computer engineering graduate with extensive<br>
-                knowledge of programming and computer science applications. I love building tools and technologies for <br>
-                entrepreneurs, companies and organizations so they can succeed. I have Engineered and deployed scalable <br>
-                web applications used by over 1 million users, optimizing performance by 40% and reducing server costs by 25% <br>
-                through efficient code architecture and cloud solutions<br><br> 
-                In my work as an engineer i have had to use a lot of clunky and counter-intuitive software, curious as to why <br>
-                these programs works the way they do. I started teaching myself how to code almost immediately. I love the combination <br>
-                of creation and problem-solving skill I get to use when writing codes, and I love how there is always more to learn.<br><br>
-                I like to have discussion of ideas so everyone can benefit from it. I refuse to accept the <br>
-                status quo and I am always looking for a new way to do things and accomplish more.&#128526;.</p>
-             <div class="btn-box btns">
-                <a href="#" class="btn">Read more</a>
-             </div>
+
+            <p class="about-intro">
+                I'm <strong>Lawani Jeremiah</strong>, a Full-Stack Developer
+                passionate about building modern web applications and digital
+                solutions that solve real-world problems.
+            </p>
+
+            <p>
+                I work across the frontend, backend, databases, APIs, and
+                deployment layers to transform ideas into functional and
+                user-focused software. My experience includes building
+                business applications, dashboards, educational platforms,
+                and other web-based solutions.
+            </p>
+
+            <p>
+                I enjoy solving complex problems, learning new technologies,
+                and continuously improving the way I build software. I care
+                about writing maintainable code, creating intuitive user
+                experiences, and building solutions that can grow with the
+                needs of their users.
+            </p>
+
+
+            <!-- About Highlights -->
+            <div class="about-highlights">
+
+                <div class="highlight">
+                    <i class='bx bx-code-alt'></i>
+
+                    <div>
+                        <h4>Clean Development</h4>
+                        <p>Maintainable and scalable code.</p>
+                    </div>
+                </div>
+
+
+                <div class="highlight">
+                    <i class='bx bx-bulb'></i>
+
+                    <div>
+                        <h4>Problem Solving</h4>
+                        <p>Turning ideas into practical solutions.</p>
+                    </div>
+                </div>
+
+
+                <div class="highlight">
+                    <i class='bx bx-rocket'></i>
+
+                    <div>
+                        <h4>Continuous Growth</h4>
+                        <p>Always learning and improving.</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- About Button -->
+            <div class="about-btn">
+
+                <a href="#projects" class="btn">
+                    View My Work
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+
+            </div>
+
         </div>
-    </section>
+
+    </div>
+
+</section>
+```
 
 <!--Education section design-->
 
@@ -245,139 +330,501 @@
         </div>
     </section>
 
-    <!--Projects section-->
-    <section class="project" id="project">
-        <h2 class="heading">My <span>Project</span></h2>
-        <div class="project-list">
-            
-            <div class="project-cards">
-                <div class="project-image card-1"></div>
-                <h2 class="title">Remote Hire Platform</h2>
-                <p>A remote hiring platform that streamlines the recruitment process by allowing employers to post jobs,
-                    review candidate profiles, and manage applications, while enabling job seekers to apply, upload resumes,
-                    and track their application status — all through a secure, user-friendly, and responsive web interface.
-                </p>
-                <a href="https://xcelentHire.vercel.app/">GO LIVE</a>
+<!-- Projects Section -->
+<section class="projects" id="projects">
+    <div class="section-header">
+        <p class="section-label">MY WORK</p>
+        <h2 class="heading">Selected <span>Projects</span></h2>
+        <p class="section-description">
+            A selection of applications and digital products I have designed and developed.
+        </p>
+    </div>
+
+    <div class="project-list">
+
+        <!-- XcelentHire -->
+        <article class="project-card">
+            <div class="project-image card-1">
+                <div class="project-overlay">
+                    <span>FULL-STACK APPLICATION</span>
+                </div>
             </div>
-            <div class="project-cards">
-                <div class="project-image card-2"></div>
-                <h2 class="title">Meridian Web Academy</h2>
+
+            <div class="project-content">
+                <h3 class="title">XcelentHire</h3>
+
                 <p>
-                    An online learning platform designed to provide accessible, practical
-                    technology and professional skills training. The platform delivers
-                    structured courses, student learning resources, certification,
-                    and a responsive experience for learners across Africa.
+                    A remote staffing platform that connects businesses with skilled
+                    professionals, simplifying talent discovery, recruitment, and
+                    application management through a responsive web experience.
                 </p>
-                <a href="https://meridian-web-academy.vercel.app/">GO LIVE</a>
+
+                <div class="project-tech">
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>PostgreSQL</span>
+                    <span>JavaScript</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://xcelentHire.vercel.app/" target="_blank" rel="noopener noreferrer">
+                        Live Demo
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+
+                    <a href="https://github.com/Billionaire-Developer/XcelentHire"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
             </div>
-            <div class="project-cards">
-                <div class="project-image card-3"></div>
-                <h2 class="title">Smart Laundry Management System</h2>
-                <p>A web-based platform that enables customers to place and track laundry orders, choose services, and
-                    schedule deliveries. It includes features for user registration, payment processing, and real-time order
-                    updates, while providing admins with tools for order management, inventory tracking, and reporting.
-                    Designed to improve efficiency and customer satisfaction through automation and a responsive interface.
+        </article>
+
+
+        <!-- Meridian Web Academy -->
+        <article class="project-card">
+            <div class="project-image card-2">
+                <div class="project-overlay">
+                    <span>EDTECH PLATFORM</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <h3 class="title">Meridian Web Academy</h3>
+
+                <p>
+                    An online learning platform designed to provide accessible and
+                    practical technology training, structured courses, learning
+                    resources, and certification for learners across Africa.
                 </p>
-                <a href="https://billionaire-developer.github.io/DRYME/">GO LIVE</a>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Web Development</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://meridian-web-academy.vercel.app/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Live Demo
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
             </div>
-            <div class="project-cards">
-                <div class="project-image card-4"></div>
-                <h2 class="title">ACME Business Management Dashboard</h2>
-                <p>A Next.js-powered ACME business management platform featuring an intuitive dashboard, invoice
-                    creation and tracking, customer management, and real-time data updates — designed for efficiency,
-                    scalability, and a smooth user experience.
+        </article>
+
+
+        <!-- Smart Laundry Management System -->
+        <article class="project-card">
+            <div class="project-image card-3">
+                <div class="project-overlay">
+                    <span>BUSINESS APPLICATION</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <h3 class="title">Smart Laundry Management System</h3>
+
+                <p>
+                    A web-based laundry management system that allows customers to
+                    place and track orders, select services, schedule deliveries,
+                    and manage their laundry experience through a responsive interface.
                 </p>
-                <a href="https://github.com/Billionaire-Developer/ACME">READ MORE</a>
+
+                <div class="project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Web App</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://billionaire-developer.github.io/DRYME/"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        Live Demo
+                        <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
             </div>
-            <div class="project-cards">
-                <div class="project-image card-4"></div>
-                <h2 class="title">ACME Business Management Dashboard</h2>
-                <p>A Next.js-powered ACME business management platform featuring an intuitive dashboard, invoice
-                    creation and tracking, customer management, and real-time data updates — designed for efficiency,
-                    scalability, and a smooth user experience.
+        </article>
+
+
+        <!-- ACME Business Management Dashboard -->
+        <article class="project-card">
+            <div class="project-image card-4">
+                <div class="project-overlay">
+                    <span>BUSINESS APPLICATION</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <h3 class="title">ACME Business Management Dashboard</h3>
+
+                <p>
+                    A business management dashboard featuring invoice creation and
+                    tracking, customer management, and real-time data updates,
+                    designed for efficiency, scalability, and a smooth user experience.
                 </p>
-                <a href="https://github.com/Billionaire-Developer/ACME">READ MORE</a>
+
+                <div class="project-tech">
+                    <span>Next.js</span>
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>PostgreSQL</span>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/Billionaire-Developer/ACME"
+                       target="_blank"
+                       rel="noopener noreferrer">
+                        GitHub
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
             </div>
-            <div class="project-cards">
-                <div class="project-image card-4"></div>
-                <h2 class="title">ACME Business Management Dashboard</h2>
-                <p>A Next.js-powered ACME business management platform featuring an intuitive dashboard, invoice
-                    creation and tracking, customer management, and real-time data updates — designed for efficiency,
-                    scalability, and a smooth user experience.
-                </p>
-                <a href="https://github.com/Billionaire-Developer/ACME">READ MORE</a>
+        </article>
+
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contact" id="contact">
+
+    <div class="section-header">
+        <p class="section-label">GET IN TOUCH</p>
+
+        <h2 class="heading">
+            Let's Build <span>Something.</span>
+        </h2>
+
+        <p class="section-description">
+            Have a project, business idea, or opportunity in mind?
+            I'd love to hear about it. Send me a message and let's
+            discuss how we can turn your idea into a working solution.
+        </p>
+    </div>
+
+
+    <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+
+            <h3>Let's Talk</h3>
+
+            <p>
+                Whether you need a full-stack application, API,
+                business dashboard, or a complete digital product,
+                I'm available to discuss your project.
+            </p>
+
+
+            <div class="contact-details">
+
+                <!-- Email -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class='bx bx-envelope'></i>
+                    </div>
+
+                    <div>
+                        <span>Email</span>
+                        <a href="mailto:lawani_jeremiah@yahoo.com">
+                            lawani_jeremiah@yahoo.com
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Phone -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class='bx bx-phone'></i>
+                    </div>
+
+                    <div>
+                        <span>Phone</span>
+                        <a href="tel:+2347030866186">
+                            +234 703 086 6186
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- Location -->
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class='bx bx-map'></i>
+                    </div>
+
+                    <div>
+                        <span>Location</span>
+                        <p>Nigeria</p>
+                    </div>
+                </div>
+
             </div>
-            <div class="project-cards">
-                <div class="project-image card-4"></div>
-                <h2 class="title">ACME Business Management Dashboard</h2>
-                <p>A Next.js-powered ACME business management platform featuring an intuitive dashboard, invoice
-                    creation and tracking, customer management, and real-time data updates — designed for efficiency,
-                    scalability, and a smooth user experience.
-                </p>
-                <a href="https://github.com/Billionaire-Developer/ACME">READ MORE</a>
+
+
+            <!-- Social Links -->
+            <div class="contact-socials">
+
+                <a href="https://github.com/Billionaire-Developer"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="GitHub">
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="LinkedIn">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a href="https://twitter.com/BillionaireDeve"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   aria-label="Twitter">
+                    <i class='bx bxl-twitter'></i>
+                </a>
+
             </div>
-                <div class="project-cards">
-                <div class="project-image card-4"></div>
-                <h2 class="title">ACME Business Management Dashboard</h2>
-                <p>A Next.js-powered ACME business management platform featuring an intuitive dashboard, invoice
-                    creation and tracking, customer management, and real-time data updates — designed for efficiency,
-                    scalability, and a smooth user experience.
-                </p>
-                <a href="https://github.com/Billionaire-Developer/ACME">READ MORE</a>
-            </div>
+
         </div>
-    </section>
 
-    <!--contact section design-->
 
-    <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
+        <!-- Contact Form -->
+        <div class="contact-form">
 
-        <form action="#">
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" id="lastName"   placeholder="Last Name" required>
-                    <span class="focus"></span>
+            <form id="contact-form" action="#" method="POST">
+
+                <!-- Name -->
+                <div class="input-box">
+
+                    <div class="input-field">
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="First Name"
+                            autocomplete="given-name"
+                            required
+                        >
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="input-field">
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Last Name"
+                            autocomplete="family-name"
+                            required
+                        >
+                        <span class="focus"></span>
+                    </div>
+
                 </div>
-                <div class="input-field">
-                    <input type="text" id="firstName"  placeholder="First Name" required>
-                    <span class="focus"></span>
+
+
+                <!-- Contact Details -->
+                <div class="input-box">
+
+                    <div class="input-field">
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Email Address"
+                            autocomplete="email"
+                            required
+                        >
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="input-field">
+                        <input
+                            type="tel"
+                            id="number"
+                            name="number"
+                            placeholder="Mobile Number"
+                            autocomplete="tel"
+                        >
+                        <span class="focus"></span>
+                    </div>
+
                 </div>
-            </div>
 
-            <div class="input-box">
-                <div class="input-field">
-                    <input type="text" id="email"   placeholder="Email Address" required>
-                    <span class="focus"></span>
+
+                <!-- Subject -->
+                <div class="input-box">
+
+                    <div class="input-field full-width">
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Project Subject"
+                            required
+                        >
+                        <span class="focus"></span>
+                    </div>
+
                 </div>
-                <div class="input-field">
-                    <input type="text" id="number"  placeholder="Mobile Number" required>
+
+
+                <!-- Message -->
+                <div class="textarea-field">
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="7"
+                        placeholder="Tell me about your project..."
+                        required
+                    ></textarea>
+
                     <span class="focus"></span>
+
                 </div>
-            </div>
 
-            <div class="textarea-field">
-                <textarea name="" id="message" cols="30" rows="10" placeholder="Message" required></textarea>
-                <span class="focus"></span>
-            </div>
 
-            <div class="btn-box btns">
-                <button onclick="sendMail()" type="Submit" class="btn">Submit</button>
-            </div>
-        </form>
-    </section>
+                <!-- Submit -->
+                <div class="btn-box btns">
 
-    <!--footer design-->
+                    <button
+                        type="submit"
+                        class="btn"
+                        id="submit-btn"
+                    >
+                        Send Message
+                        <i class='bx bx-send'></i>
+                    </button>
 
-    <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 by Billionaire-Developer | All Right Reserved.</p>
+                </div>
+
+
+                <!-- Form Status -->
+                <p
+                    id="form-status"
+                    class="form-status"
+                    aria-live="polite">
+                </p>
+
+            </form>
+
         </div>
 
-        <footer class="iconTop">
-            <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
-        </footer>
-    </footer>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-container">
+
+        <!-- Footer Brand -->
+        <div class="footer-brand">
+            <a href="#home" class="footer-logo">
+                Billionaire-<span>Developer</span>
+            </a>
+
+            <p>
+                Building modern, reliable, and scalable digital
+                solutions that turn ideas into reality.
+            </p>
+        </div>
+
+
+        <!-- Footer Navigation -->
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <!-- Footer Socials -->
+        <div class="footer-social">
+
+            <h3>Connect With Me</h3>
+
+            <div class="footer-social-links">
+
+                <a
+                    href="https://github.com/Billionaire-Developer"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="GitHub"
+                >
+                    <i class='bx bxl-github'></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="LinkedIn"
+                >
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+
+                <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Twitter"
+                >
+                    <i class='bx bxl-twitter'></i>
+                </a>
+
+                <a
+                    href="mailto:Lawanijeremiah23@gmail.com"
+                    aria-label="Email"
+                >
+                    <i class='bx bx-envelope'></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+
+        <p>
+            &copy; 2026 Billionaire-Developer.
+            All Rights Reserved.
+        </p>
+
+        <a href="#home" class="iconTop" aria-label="Back to top">
+            <i class='bx bx-up-arrow-alt'></i>
+        </a>
+
+    </div>
+
+</footer>
+
 
     <script src="script.js"></script>
 </body>
