@@ -3712,26 +3712,22 @@ span{
     border-bottom: 1px solid transparent;
 
     transition:
-        background 0.3s ease,
-        box-shadow 0.3s ease;
-}
-
-.header.sticky {
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        box-shadow 0.3s ease,
+        background 0.3s ease;
 }
 
 
 /* =====================================================
-   LOGO
+   HEADER LOGO
 ===================================================== */
 
 .logo {
     display: inline-block;
 
+    color: var(--text-color);
+
     font-size: 2.3rem;
     font-weight: 700;
-
-    color: var(--text-color);
 
     text-decoration: none;
 
@@ -3761,10 +3757,10 @@ span{
 
     padding: 5px 0;
 
+    color: var(--text-color);
+
     font-size: 1.5rem;
     font-weight: 500;
-
-    color: var(--text-color);
 
     text-decoration: none;
 
@@ -3777,7 +3773,7 @@ span{
     position: absolute;
 
     left: 0;
-    bottom: -5px;
+    bottom: -6px;
 
     width: 0;
     height: 2px;
@@ -3799,17 +3795,28 @@ span{
 
 
 /* =====================================================
-   MOBILE MENU ICON
+   MOBILE MENU BUTTON
 ===================================================== */
 
-#menu-icon {
+.menu-icon {
     display: none;
 
-    font-size: 3.2rem;
+    width: auto;
+    height: auto;
+
+    padding: 0;
+
+    border: 0;
+
+    background: transparent;
 
     color: var(--text-color);
 
+    font-size: 3.2rem;
+
     cursor: pointer;
+
+    line-height: 1;
 
     z-index: 1001;
 }
@@ -3820,6 +3827,8 @@ span{
 ===================================================== */
 
 .home {
+    position: relative;
+
     width: 100%;
     min-height: 100vh;
 
@@ -3838,19 +3847,11 @@ span{
    HERO CONTAINER
 ===================================================== */
 
-.home-container {
+.hero-container {
     width: 100%;
     max-width: 1200px;
 
     margin: 0 auto;
-
-    display: grid;
-
-    grid-template-columns: minmax(0, 1.1fr) minmax(350px, 0.9fr);
-
-    align-items: center;
-
-    gap: 70px;
 }
 
 
@@ -3858,85 +3859,228 @@ span{
    HERO CONTENT
 ===================================================== */
 
-.home-content {
-    min-width: 0;
+.hero-content {
+    position: relative;
 
-    max-width: 680px;
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1.05fr)
+        minmax(350px, 0.95fr);
+
+    grid-template-areas:
+        "label visual"
+        "text visual";
+
+    column-gap: 70px;
+
+    align-items: center;
 }
 
 
-/* Small label */
+/* =====================================================
+   HERO LABEL
+===================================================== */
 
-.home-label {
-    margin-bottom: 14px;
+.hero-label {
+    grid-area: label;
+
+    margin: 0 0 14px;
+
+    color: var(--main-color);
 
     font-size: 1.3rem;
     font-weight: 700;
 
     letter-spacing: 3px;
-
-    color: var(--main-color);
 }
 
 
-/* Main heading */
+/* =====================================================
+   HERO TEXT
+===================================================== */
 
-.home-content h1 {
+.hero-text {
+    grid-area: text;
+
+    width: 100%;
+    max-width: 680px;
+}
+
+
+/* =====================================================
+   HERO HEADING
+===================================================== */
+
+.hero-heading {
     margin: 0 0 12px;
+
+    color: var(--text-color);
 
     font-size: clamp(4.5rem, 5vw, 6.5rem);
 
     font-weight: 700;
 
     line-height: 1.05;
-
-    color: var(--text-color);
 }
 
-.home-content h1 span {
+.hero-heading span {
     display: block;
 
     color: var(--main-color);
 }
 
 
-/* Hero title */
+/* =====================================================
+   HERO TITLE
+===================================================== */
 
-.home-title {
-    margin-bottom: 22px;
+.hero-title {
+    margin: 0 0 22px;
+
+    color: var(--text-color);
 
     font-size: clamp(2.4rem, 3vw, 3.6rem);
 
     font-weight: 600;
 
     line-height: 1.3;
-
-    color: var(--text-color);
 }
 
 
-/* Description */
+/* =====================================================
+   HERO DESCRIPTION
+===================================================== */
 
-.home-description {
+.hero-description {
     max-width: 650px;
 
-    margin-bottom: 32px;
+    margin: 0 0 32px;
+
+    color: var(--text-color);
 
     font-size: 1.6rem;
 
     line-height: 1.8;
-
-    color: var(--text-color);
 
     opacity: 0.8;
 }
 
 
 /* =====================================================
-   CTA BUTTONS
+   HERO VISUAL
 ===================================================== */
 
-.btn-box {
+.hero-visual {
+    grid-area: visual;
+
+    position: relative;
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* =====================================================
+   HERO IMAGE CONTAINER
+===================================================== */
+
+.hero-image {
+    position: relative;
+
+    width: min(100%, 410px);
+
+    aspect-ratio: 1 / 1;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 3;
+}
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.hero-image img {
+    width: 88%;
+    height: 88%;
+
+    display: block;
+
+    aspect-ratio: 1 / 1;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 4px solid var(--main-color);
+
+    border-radius: 50%;
+}
+
+
+/* =====================================================
+   HERO IMAGE RINGS
+===================================================== */
+
+.hero-ring {
+    position: absolute;
+
+    border: 1px solid var(--main-color);
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.hero-ring-one {
+    width: 440px;
+    height: 440px;
+
+    opacity: 0.22;
+
+    animation: heroRingRotate 12s linear infinite;
+}
+
+.hero-ring-two {
+    width: 480px;
+    height: 480px;
+
+    opacity: 0.08;
+}
+
+
+/* Rotating ring */
+
+@keyframes heroRingRotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+
+}
+
+
+/* =====================================================
+   HERO ACTIONS
+===================================================== */
+
+.hero-actions {
+    width: 100%;
+
     display: flex;
     align-items: center;
 
@@ -3947,7 +4091,17 @@ span{
     margin-bottom: 30px;
 }
 
-.btn {
+
+/* =====================================================
+   HERO BUTTON
+===================================================== */
+
+.hero-btn {
+    min-width: 165px;
+    min-height: 50px;
+
+    padding: 1.2rem 2.2rem;
+
     display: inline-flex;
 
     align-items: center;
@@ -3955,17 +4109,9 @@ span{
 
     gap: 8px;
 
-    min-width: 165px;
-    min-height: 50px;
-
-    padding: 1.2rem 2.2rem;
-
     border: 2px solid var(--main-color);
+
     border-radius: 8px;
-
-    background: var(--main-color);
-
-    color: var(--bg-color);
 
     font-size: 1.5rem;
     font-weight: 600;
@@ -3981,67 +4127,84 @@ span{
         color 0.3s ease;
 }
 
-.btn i {
+.hero-btn i {
     font-size: 2rem;
 
     transition: transform 0.3s ease;
 }
 
-.btn:hover {
-    transform: translateY(-3px);
 
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-}
+/* Primary button */
 
-.btn:hover i {
-    transform: translateX(4px);
-}
-
-
-/* Outline button */
-
-.btn-outline {
-    background: transparent;
-
-    color: var(--main-color);
-}
-
-.btn-outline:hover {
+.hero-btn-primary {
     background: var(--main-color);
 
     color: var(--bg-color);
 }
 
+.hero-btn-primary:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn-primary:hover i {
+    transform: translateX(4px);
+}
+
+
+/* Secondary button */
+
+.hero-btn-secondary {
+    background: transparent;
+
+    color: var(--main-color);
+}
+
+.hero-btn-secondary:hover {
+    transform: translateY(-3px);
+
+    background: var(--main-color);
+
+    color: var(--bg-color);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-btn-secondary:hover i {
+    transform: translateX(4px);
+}
+
 
 /* =====================================================
-   TECHNOLOGY SECTION
+   TECHNOLOGY STACK
 ===================================================== */
 
-.home-tech {
-    display: flex;
+.hero-tech {
+    width: 100%;
 
+    display: flex;
     align-items: center;
 
     flex-wrap: wrap;
 
-    gap: 14px;
+    gap: 12px;
 
     margin-bottom: 25px;
 }
 
-.tech-label {
-    font-size: 1.3rem;
-
+.hero-tech-label {
     color: var(--text-color);
+
+    font-size: 1.3rem;
 
     opacity: 0.6;
 
     white-space: nowrap;
 }
 
-.tech-list {
+.hero-tech-list {
     display: flex;
-
     align-items: center;
 
     flex-wrap: wrap;
@@ -4049,14 +4212,14 @@ span{
     gap: 8px;
 }
 
-.tech-list span {
+.hero-tech-list span {
     padding: 7px 12px;
+
+    background: var(--second-bg-color);
 
     border: 1px solid rgba(255, 255, 255, 0.12);
 
     border-radius: 20px;
-
-    background: var(--second-bg-color);
 
     color: var(--text-color);
 
@@ -4066,13 +4229,16 @@ span{
 
     transition:
         color 0.3s ease,
-        border-color 0.3s ease;
+        border-color 0.3s ease,
+        transform 0.3s ease;
 }
 
-.tech-list span:hover {
+.hero-tech-list span:hover {
     color: var(--main-color);
 
     border-color: var(--main-color);
+
+    transform: translateY(-2px);
 }
 
 
@@ -4080,15 +4246,14 @@ span{
    SOCIAL LINKS
 ===================================================== */
 
-.home-socials {
+.hero-socials {
     display: flex;
-
     align-items: center;
 
     gap: 12px;
 }
 
-.home-socials a {
+.hero-socials a {
     width: 42px;
     height: 42px;
 
@@ -4114,7 +4279,7 @@ span{
         border-color 0.3s ease;
 }
 
-.home-socials a:hover {
+.hero-socials a:hover {
     transform: translateY(-4px);
 
     background: var(--main-color);
@@ -4122,107 +4287,6 @@ span{
     color: var(--bg-color);
 
     border-color: var(--main-color);
-}
-
-
-/* =====================================================
-   HERO VISUAL
-===================================================== */
-
-.home-visual {
-    position: relative;
-
-    min-width: 0;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-}
-
-
-/* =====================================================
-   HERO IMAGE
-===================================================== */
-
-.home-image {
-    position: relative;
-
-    width: min(100%, 400px);
-
-    aspect-ratio: 1 / 1;
-
-    display: flex;
-
-    align-items: center;
-    justify-content: center;
-
-    z-index: 2;
-}
-
-.home-image img {
-    width: 88%;
-    height: 88%;
-
-    aspect-ratio: 1 / 1;
-
-    object-fit: cover;
-    object-position: center;
-
-    display: block;
-
-    border: 4px solid var(--main-color);
-
-    border-radius: 50%;
-}
-
-
-/* Rotating ring */
-
-.home-image::before {
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    border: 2px solid var(--main-color);
-
-    border-radius: 50%;
-
-    opacity: 0.35;
-
-    animation: heroRotate 10s linear infinite;
-}
-
-@keyframes heroRotate {
-
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-
-}
-
-
-/* Outer decorative ring */
-
-.home-image-decoration {
-    position: absolute;
-
-    width: 440px;
-    height: 440px;
-
-    border: 1px solid var(--main-color);
-
-    border-radius: 50%;
-
-    opacity: 0.12;
-
-    z-index: 1;
 }
 
 
@@ -4249,24 +4313,29 @@ span{
         padding-right: 6%;
     }
 
-    .home-container {
-        gap: 45px;
+    .hero-content {
+        column-gap: 45px;
     }
 
-    .home-image {
-        width: min(100%, 350px);
+    .hero-image {
+        width: 350px;
     }
 
-    .home-image-decoration {
-        width: 385px;
-        height: 385px;
+    .hero-ring-one {
+        width: 380px;
+        height: 380px;
+    }
+
+    .hero-ring-two {
+        width: 415px;
+        height: 415px;
     }
 
 }
 
 
 /* =====================================================
-   TABLET
+   TABLET / MOBILE NAVIGATION
 ===================================================== */
 
 @media (max-width: 900px) {
@@ -4279,9 +4348,12 @@ span{
         padding: 0 6%;
     }
 
-    #menu-icon {
+    .menu-icon {
         display: block;
     }
+
+
+    /* Mobile navigation */
 
     .navbar {
         position: absolute;
@@ -4291,12 +4363,11 @@ span{
 
         width: 100%;
 
-        padding: 20px 6% 25px;
+        padding: 18px 6% 25px;
 
         display: none;
 
         flex-direction: column;
-
         align-items: flex-start;
 
         gap: 0;
@@ -4330,41 +4401,60 @@ span{
     .home {
         min-height: auto;
 
-        padding: 115px 6% 70px;
+        padding: 115px 6% 75px;
     }
 
-    .home-container {
+
+    /*
+        Change the hero from a two-column
+        desktop layout to a vertical layout.
+    */
+
+    .hero-content {
         display: flex;
 
         flex-direction: column;
 
-        gap: 50px;
+        align-items: center;
 
         text-align: center;
+
+        gap: 0;
     }
 
-    .home-content {
-        width: 100%;
+
+    /* Order */
+
+    .hero-label {
+        order: 1;
+
+        margin-bottom: 22px;
+    }
+
+    .hero-visual {
+        order: 2;
+
+        margin-bottom: 35px;
+    }
+
+    .hero-text {
+        order: 3;
+
         max-width: 750px;
-
-        margin: 0 auto;
     }
 
-    .home-label {
-        font-size: 1.3rem;
-    }
 
-    .home-content h1 {
+    /* Hero text */
+
+    .hero-heading {
         font-size: clamp(4rem, 8vw, 5.8rem);
     }
 
-    .home-title {
+    .hero-title {
         font-size: clamp(2.4rem, 5vw, 3.3rem);
     }
 
-    .home-description {
-        max-width: 650px;
-
+    .hero-description {
         margin-left: auto;
         margin-right: auto;
 
@@ -4374,40 +4464,39 @@ span{
 
     /* Buttons */
 
-    .btn-box {
+    .hero-actions {
         justify-content: center;
     }
 
 
     /* Technologies */
 
-    .home-tech {
+    .hero-tech {
+        justify-content: center;
+    }
+
+
+    /* Social */
+
+    .hero-socials {
         justify-content: center;
     }
 
 
     /* Image */
 
-    .home-visual {
-        width: 100%;
-
-        order: 2;
-    }
-
-    .home-image {
+    .hero-image {
         width: 330px;
     }
 
-    .home-image-decoration {
+    .hero-ring-one {
         width: 360px;
         height: 360px;
     }
 
-
-    /* Socials */
-
-    .home-socials {
-        justify-content: center;
+    .hero-ring-two {
+        width: 395px;
+        height: 395px;
     }
 
 }
@@ -4428,35 +4517,32 @@ span{
     }
 
     .logo {
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
 
-    #menu-icon {
+    .menu-icon {
         font-size: 3rem;
     }
 
     .navbar {
         top: 65px;
 
-        padding: 15px 5% 20px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
 
     /* Hero */
 
     .home {
-        padding: 100px 5% 55px;
-    }
-
-    .home-container {
-        gap: 38px;
+        padding: 100px 5% 60px;
     }
 
 
     /* Label */
 
-    .home-label {
-        margin-bottom: 12px;
+    .hero-label {
+        margin-bottom: 20px;
 
         font-size: 1.1rem;
 
@@ -4464,9 +4550,34 @@ span{
     }
 
 
+    /* Image */
+
+    .hero-visual {
+        margin-bottom: 32px;
+    }
+
+    .hero-image {
+        width: 275px;
+    }
+
+    .hero-image img {
+        border-width: 3px;
+    }
+
+    .hero-ring-one {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-ring-two {
+        width: 330px;
+        height: 330px;
+    }
+
+
     /* Heading */
 
-    .home-content h1 {
+    .hero-heading {
         margin-bottom: 12px;
 
         font-size: clamp(3.5rem, 11vw, 4.5rem);
@@ -4475,9 +4586,9 @@ span{
     }
 
 
-    /* Hero title */
+    /* Title */
 
-    .home-title {
+    .hero-title {
         margin-bottom: 18px;
 
         font-size: 2.3rem;
@@ -4488,7 +4599,7 @@ span{
 
     /* Description */
 
-    .home-description {
+    .hero-description {
         margin-bottom: 28px;
 
         font-size: 1.4rem;
@@ -4499,22 +4610,22 @@ span{
 
     /* Buttons */
 
-    .btn-box {
+    .hero-actions {
         width: 100%;
 
         flex-direction: column;
 
         gap: 12px;
 
-        margin-bottom: 28px;
+        margin-bottom: 30px;
     }
 
-    .btn {
+    .hero-btn {
         width: 100%;
 
-        max-width: 320px;
+        max-width: 330px;
 
-        min-height: 50px;
+        min-height: 52px;
 
         margin: 0 auto;
 
@@ -4524,64 +4635,42 @@ span{
 
     /* Technologies */
 
-    .home-tech {
+    .hero-tech {
         flex-direction: column;
 
         justify-content: center;
 
         gap: 10px;
 
-        margin-bottom: 22px;
+        margin-bottom: 25px;
     }
 
-    .tech-label {
+    .hero-tech-label {
         font-size: 1.2rem;
     }
 
-    .tech-list {
+    .hero-tech-list {
         justify-content: center;
 
         gap: 7px;
     }
 
-    .tech-list span {
+    .hero-tech-list span {
         padding: 6px 10px;
 
         font-size: 1.1rem;
     }
 
 
-    /* Image */
+    /* Socials */
 
-    .home-visual {
-        width: 100%;
+    .hero-socials {
+        gap: 12px;
     }
 
-    .home-image {
-        width: 275px;
-    }
-
-    .home-image img {
-        border-width: 3px;
-    }
-
-    .home-image-decoration {
-        width: 300px;
-        height: 300px;
-    }
-
-
-    /* Social links */
-
-    .home-socials {
-        gap: 10px;
-
-        margin-top: 5px;
-    }
-
-    .home-socials a {
-        width: 40px;
-        height: 40px;
+    .hero-socials a {
+        width: 42px;
+        height: 42px;
 
         font-size: 1.9rem;
     }
@@ -4595,42 +4684,1290 @@ span{
 
 @media (max-width: 400px) {
 
+    .header {
+        height: 62px;
+    }
+
     .logo {
         font-size: 1.7rem;
     }
 
-    .home {
-        padding-left: 5%;
-        padding-right: 5%;
+    .menu-icon {
+        font-size: 2.8rem;
     }
 
-    .home-content h1 {
+    .navbar {
+        top: 62px;
+    }
+
+
+    .home {
+        padding: 92px 5% 55px;
+    }
+
+
+    .hero-label {
+        font-size: 1rem;
+
+        letter-spacing: 1.8px;
+    }
+
+
+    .hero-visual {
+        margin-bottom: 28px;
+    }
+
+    .hero-image {
+        width: 235px;
+    }
+
+    .hero-ring-one {
+        width: 260px;
+        height: 260px;
+    }
+
+    .hero-ring-two {
+        width: 285px;
+        height: 285px;
+    }
+
+
+    .hero-heading {
         font-size: 3.2rem;
     }
 
-    .home-title {
+    .hero-title {
         font-size: 2.1rem;
     }
 
-    .home-description {
-        font-size: 1.35rem;
+    .hero-description {
+        font-size: 1.3rem;
     }
 
-    .btn {
+
+    .hero-btn {
         max-width: 290px;
 
-        min-height: 48px;
+        min-height: 49px;
 
-        font-size: 1.35rem;
+        font-size: 1.3rem;
     }
 
-    .home-image {
-        width: 245px;
+
+    .hero-tech-list span {
+        padding: 6px 9px;
+
+        font-size: 1rem;
     }
 
-    .home-image-decoration {
-        width: 265px;
-        height: 265px;
+
+    .hero-socials a {
+        width: 40px;
+        height: 40px;
+
+        font-size: 1.8rem;
+    }
+
+}
+
+/* =====================================================
+   EXPERIENCE SECTION
+===================================================== */
+
+.experience {
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--bg-color);
+}
+
+
+/* =====================================================
+   EXPERIENCE CONTAINER
+===================================================== */
+
+.experience-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.experience-header {
+    max-width: 760px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.experience-label {
+    margin: 0 0 10px;
+
+    color: var(--main-color);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.experience-heading {
+    margin: 0 0 15px;
+
+    color: var(--text-color);
+
+    font-size: clamp(3.5rem, 5vw, 5rem);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+.experience-heading span {
+    color: var(--main-color);
+}
+
+.experience-description {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: var(--text-color);
+
+    font-size: 1.6rem;
+
+    line-height: 1.7;
+
+    opacity: 0.75;
+}
+
+
+/* =====================================================
+   EXPERIENCE GRID
+===================================================== */
+
+.experience-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+/* =====================================================
+   EXPERIENCE COLUMN
+===================================================== */
+
+.experience-column {
+    min-width: 0;
+
+    padding: 30px;
+
+    background: var(--second-bg-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 16px;
+}
+
+
+/* =====================================================
+   COLUMN HEADER
+===================================================== */
+
+.experience-column-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+
+    padding-bottom: 22px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* Header icon */
+
+.experience-header-icon {
+    flex-shrink: 0;
+
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(0, 171, 240, 0.1);
+
+    color: var(--main-color);
+
+    font-size: 2.5rem;
+}
+
+
+/* Header label */
+
+.experience-column-label {
+    margin: 0 0 4px;
+
+    color: var(--main-color);
+
+    font-size: 1.1rem;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+
+/* Header title */
+
+.experience-column-header h3 {
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   EXPERIENCE LIST
+===================================================== */
+
+.experience-list {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* =====================================================
+   EXPERIENCE CARD
+===================================================== */
+
+.experience-card {
+    position: relative;
+
+    padding: 22px;
+
+    background: var(--bg-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.experience-card:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--main-color);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   CARD TOP
+===================================================== */
+
+.experience-card-top {
+    display: flex;
+
+    align-items: center;
+
+    margin-bottom: 12px;
+}
+
+
+/* =====================================================
+   DATE
+===================================================== */
+
+.experience-date {
+    display: inline-flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    padding: 5px 10px;
+
+    border-radius: 20px;
+
+    background: rgba(0, 171, 240, 0.08);
+
+    color: var(--main-color);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+.experience-date i {
+    font-size: 1.4rem;
+}
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+.experience-card h4 {
+    margin: 0 0 7px;
+
+    color: var(--text-color);
+
+    font-size: 1.7rem;
+
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+
+/* =====================================================
+   INSTITUTION
+===================================================== */
+
+.experience-institution {
+    margin: 0 0 12px;
+
+    color: var(--main-color);
+
+    font-size: 1.35rem;
+
+    font-weight: 600;
+}
+
+
+/* =====================================================
+   CARD DESCRIPTION
+===================================================== */
+
+.experience-card-description {
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 1.3rem;
+
+    line-height: 1.7;
+
+    opacity: 0.7;
+}
+
+
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .experience {
+        padding: 95px 6%;
+    }
+
+    .experience-header {
+        margin-bottom: 55px;
+    }
+
+    .experience-grid {
+        gap: 20px;
+    }
+
+    .experience-column {
+        padding: 25px;
+    }
+
+    .experience-column-header h3 {
+        font-size: 1.8rem;
+    }
+
+    .experience-card {
+        padding: 20px;
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .experience {
+        padding: 85px 6%;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .experience-column {
+        padding: 28px;
+    }
+
+    .experience-header {
+        margin-bottom: 45px;
+    }
+
+    .experience-description {
+        font-size: 1.5rem;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .experience {
+        padding: 70px 5%;
+    }
+
+
+    /* Section header */
+
+    .experience-header {
+        margin-bottom: 38px;
+    }
+
+    .experience-label {
+        margin-bottom: 8px;
+
+        font-size: 1.1rem;
+
+        letter-spacing: 2px;
+    }
+
+    .experience-heading {
+        margin-bottom: 12px;
+
+        font-size: 3.4rem;
+    }
+
+    .experience-description {
+        font-size: 1.4rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* Columns */
+
+    .experience-grid {
+        gap: 20px;
+    }
+
+    .experience-column {
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+
+    /* Column header */
+
+    .experience-column-header {
+        gap: 12px;
+
+        margin-bottom: 22px;
+
+        padding-bottom: 18px;
+    }
+
+    .experience-header-icon {
+        width: 44px;
+        height: 44px;
+
+        border-radius: 10px;
+
+        font-size: 2.2rem;
+    }
+
+    .experience-column-label {
+        font-size: 1rem;
+
+        letter-spacing: 1.5px;
+    }
+
+    .experience-column-header h3 {
+        font-size: 1.7rem;
+    }
+
+
+    /* Cards */
+
+    .experience-list {
+        gap: 12px;
+    }
+
+    .experience-card {
+        padding: 18px;
+    }
+
+    .experience-card h4 {
+        font-size: 1.5rem;
+
+        line-height: 1.4;
+    }
+
+    .experience-institution {
+        font-size: 1.25rem;
+    }
+
+    .experience-card-description {
+        font-size: 1.25rem;
+
+        line-height: 1.7;
+    }
+
+    .experience-date {
+        font-size: 1rem;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .experience {
+        padding: 60px 5%;
+    }
+
+    .experience-heading {
+        font-size: 3rem;
+    }
+
+    .experience-description {
+        font-size: 1.3rem;
+    }
+
+    .experience-column {
+        padding: 17px;
+    }
+
+    .experience-column-header {
+        gap: 10px;
+    }
+
+    .experience-header-icon {
+        width: 40px;
+        height: 40px;
+
+        font-size: 2rem;
+    }
+
+    .experience-column-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .experience-card {
+        padding: 15px;
+    }
+
+    .experience-card h4 {
+        font-size: 1.4rem;
+    }
+
+    .experience-institution {
+        font-size: 1.2rem;
+    }
+
+    .experience-card-description {
+        font-size: 1.2rem;
+    }
+
+}
+
+
+/* =====================================================
+   SKILLS SECTION
+===================================================== */
+
+.skills {
+    width: 100%;
+
+    padding: 110px 8%;
+
+    background: var(--second-bg-color);
+}
+
+
+/* =====================================================
+   SKILLS CONTAINER
+===================================================== */
+
+.skills-container {
+    width: 100%;
+    max-width: 1200px;
+
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   SECTION HEADER
+===================================================== */
+
+.skills-header {
+    max-width: 760px;
+
+    margin: 0 auto 65px;
+
+    text-align: center;
+}
+
+.skills-label {
+    margin: 0 0 10px;
+
+    color: var(--main-color);
+
+    font-size: 1.3rem;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.skills-heading {
+    margin: 0 0 15px;
+
+    color: var(--text-color);
+
+    font-size: clamp(3.5rem, 5vw, 5rem);
+
+    font-weight: 700;
+
+    line-height: 1.1;
+}
+
+.skills-heading span {
+    color: var(--main-color);
+}
+
+.skills-description {
+    max-width: 680px;
+
+    margin: 0 auto;
+
+    color: var(--text-color);
+
+    font-size: 1.6rem;
+
+    line-height: 1.7;
+
+    opacity: 0.75;
+}
+
+
+/* =====================================================
+   TECHNICAL SKILLS GRID
+===================================================== */
+
+.skills-grid {
+    width: 100%;
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =====================================================
+   SKILL CARD
+===================================================== */
+
+.skill-card {
+    min-width: 0;
+
+    padding: 30px;
+
+    background: var(--bg-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    border-color: var(--main-color);
+
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+/* =====================================================
+   SKILL CARD HEADER
+===================================================== */
+
+.skill-card-header {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 18px;
+}
+
+
+/* =====================================================
+   SKILL ICON
+===================================================== */
+
+.skill-icon {
+    flex-shrink: 0;
+
+    width: 52px;
+    height: 52px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(0, 171, 240, 0.1);
+
+    color: var(--main-color);
+
+    font-size: 2.6rem;
+}
+
+
+/* =====================================================
+   SKILL CATEGORY
+===================================================== */
+
+.skill-category {
+    margin: 0 0 4px;
+
+    color: var(--main-color);
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    letter-spacing: 1.8px;
+}
+
+
+/* =====================================================
+   SKILL CARD TITLE
+===================================================== */
+
+.skill-card-header h3 {
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 2rem;
+
+    font-weight: 600;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   SKILL CARD DESCRIPTION
+===================================================== */
+
+.skill-card-description {
+    margin: 0 0 22px;
+
+    color: var(--text-color);
+
+    font-size: 1.35rem;
+
+    line-height: 1.7;
+
+    opacity: 0.7;
+}
+
+
+/* =====================================================
+   SKILL TAGS
+===================================================== */
+
+.skill-tags {
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+}
+
+.skill-tags span {
+    padding: 7px 12px;
+
+    background: var(--second-bg-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+
+    border-radius: 20px;
+
+    color: var(--text-color);
+
+    font-size: 1.2rem;
+
+    white-space: nowrap;
+
+    transition:
+        color 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease;
+}
+
+.skill-tags span:hover {
+    color: var(--main-color);
+
+    border-color: var(--main-color);
+
+    background: rgba(0, 171, 240, 0.08);
+}
+
+
+/* =====================================================
+   PROFESSIONAL SKILLS
+===================================================== */
+
+.professional-skills {
+    width: 100%;
+
+    margin-top: 70px;
+
+    padding-top: 55px;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =====================================================
+   PROFESSIONAL HEADER
+===================================================== */
+
+.professional-header {
+    margin-bottom: 35px;
+
+    text-align: center;
+}
+
+.professional-header .skills-label {
+    margin-bottom: 8px;
+}
+
+.professional-header h3 {
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 3rem;
+
+    font-weight: 600;
+}
+
+.professional-header h3 span {
+    color: var(--main-color);
+}
+
+
+/* =====================================================
+   PROFESSIONAL GRID
+===================================================== */
+
+.professional-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 15px;
+}
+
+
+/* =====================================================
+   PROFESSIONAL SKILL
+===================================================== */
+
+.professional-skill {
+    min-width: 0;
+
+    padding: 22px;
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    background: var(--bg-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 12px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.professional-skill:hover {
+    transform: translateY(-4px);
+
+    border-color: var(--main-color);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Professional icon */
+
+.professional-skill > i {
+    flex-shrink: 0;
+
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(0, 171, 240, 0.1);
+
+    color: var(--main-color);
+
+    font-size: 2.2rem;
+}
+
+
+/* Professional title */
+
+.professional-skill h4 {
+    margin: 0 0 6px;
+
+    color: var(--text-color);
+
+    font-size: 1.5rem;
+
+    font-weight: 600;
+}
+
+
+/* Professional description */
+
+.professional-skill p {
+    margin: 0;
+
+    color: var(--text-color);
+
+    font-size: 1.2rem;
+
+    line-height: 1.6;
+
+    opacity: 0.65;
+}
+
+
+/* =====================================================
+   LARGE TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .skills {
+        padding: 95px 6%;
+    }
+
+    .skills-header {
+        margin-bottom: 55px;
+    }
+
+    .skill-card {
+        padding: 25px;
+    }
+
+    .professional-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .skills {
+        padding: 85px 6%;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .professional-skills {
+        margin-top: 55px;
+
+        padding-top: 45px;
+    }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+    .skills {
+        padding: 70px 5%;
+    }
+
+
+    /* Header */
+
+    .skills-header {
+        margin-bottom: 40px;
+    }
+
+    .skills-label {
+        font-size: 1.1rem;
+
+        letter-spacing: 2px;
+    }
+
+    .skills-heading {
+        margin-bottom: 12px;
+
+        font-size: 3.4rem;
+    }
+
+    .skills-description {
+        font-size: 1.4rem;
+
+        line-height: 1.7;
+    }
+
+
+    /* Skill cards */
+
+    .skills-grid {
+        gap: 14px;
+    }
+
+    .skill-card {
+        padding: 20px;
+
+        border-radius: 14px;
+    }
+
+
+    /* Card header */
+
+    .skill-card-header {
+        gap: 12px;
+
+        margin-bottom: 15px;
+    }
+
+    .skill-icon {
+        width: 45px;
+        height: 45px;
+
+        border-radius: 10px;
+
+        font-size: 2.2rem;
+    }
+
+    .skill-category {
+        font-size: 0.95rem;
+
+        letter-spacing: 1.4px;
+    }
+
+    .skill-card-header h3 {
+        font-size: 1.7rem;
+    }
+
+
+    /* Description */
+
+    .skill-card-description {
+        margin-bottom: 18px;
+
+        font-size: 1.25rem;
+
+        line-height: 1.65;
+    }
+
+
+    /* Tags */
+
+    .skill-tags {
+        gap: 7px;
+    }
+
+    .skill-tags span {
+        padding: 6px 10px;
+
+        font-size: 1.1rem;
+    }
+
+
+    /* Professional skills */
+
+    .professional-skills {
+        margin-top: 45px;
+
+        padding-top: 35px;
+    }
+
+    .professional-header {
+        margin-bottom: 25px;
+    }
+
+    .professional-header h3 {
+        font-size: 2.5rem;
+    }
+
+    .professional-grid {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .professional-skill {
+        padding: 17px;
+
+        gap: 12px;
+    }
+
+    .professional-skill > i {
+        width: 40px;
+        height: 40px;
+
+        font-size: 2rem;
+    }
+
+    .professional-skill h4 {
+        font-size: 1.4rem;
+    }
+
+    .professional-skill p {
+        font-size: 1.2rem;
+
+        line-height: 1.55;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 400px) {
+
+    .skills {
+        padding: 60px 5%;
+    }
+
+    .skills-heading {
+        font-size: 3rem;
+    }
+
+    .skills-description {
+        font-size: 1.3rem;
+    }
+
+    .skill-card {
+        padding: 17px;
+    }
+
+    .skill-card-header h3 {
+        font-size: 1.55rem;
+    }
+
+    .skill-card-description {
+        font-size: 1.2rem;
+    }
+
+    .skill-tags span {
+        padding: 5px 9px;
+
+        font-size: 1rem;
+    }
+
+    .professional-header h3 {
+        font-size: 2.2rem;
+    }
+
+    .professional-skill {
+        padding: 15px;
     }
 
 }

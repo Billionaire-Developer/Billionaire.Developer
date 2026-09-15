@@ -19,10 +19,10 @@
 </script>
 </head>
 <body>
-   ```html
-<!-- =========================
+   
+<!-- =====================================================
      HEADER
-========================= -->
+===================================================== -->
 
 <header class="header">
 
@@ -32,17 +32,19 @@
     </a>
 
 
-    <!-- Mobile Menu -->
-    <div
-        class="bx bx-menu"
+    <!-- Mobile Menu Button -->
+    <button
+        class="menu-icon bx bx-menu"
         id="menu-icon"
+        type="button"
         aria-label="Open navigation menu"
         aria-expanded="false"
-    ></div>
+        aria-controls="navbar"
+    ></button>
 
 
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
 
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
@@ -57,160 +59,170 @@
 
 
 
-<!-- =========================
-     HEADER
-========================= -->
-
-<header class="header">
-
-    <a href="#home" class="logo">
-        Billionaire-<span>Developer</span>
-    </a>
-
-    <div
-        class="bx bx-menu"
-        id="menu-icon"
-        aria-label="Open navigation menu"
-        aria-expanded="false"
-    ></div>
-
-    <nav class="navbar">
-
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact</a>
-
-    </nav>
-
-</header>
-
-
-<!-- =========================
-     HOME / HERO
-========================= -->
+<!-- =====================================================
+     HOME / HERO SECTION
+===================================================== -->
 
 <section class="home" id="home">
 
-    <div class="home-container">
+    <div class="hero-container">
 
-        <!-- =====================
+
+        <!-- =================================================
              HERO CONTENT
-        ====================== -->
+        ================================================== -->
 
-        <div class="home-content">
+        <div class="hero-content">
 
-            <p class="home-label">
+
+            <!-- =========================
+                 HERO LABEL
+            ========================== -->
+
+            <p class="hero-label">
                 FULL-STACK DEVELOPER
             </p>
 
-            <h1>
-                Hi, I'm
-                <span>Lawani Jeremiah</span>
-            </h1>
-
-            <h2 class="home-title">
-                I Build Digital Products
-            </h2>
-
-            <p class="home-description">
-                I design and develop modern web applications that solve
-                real-world problems. From intuitive interfaces to scalable
-                backend systems, I turn ideas into reliable digital products.
-            </p>
 
 
-            <!-- CTA BUTTONS -->
+            <!-- =========================
+                 HERO IMAGE
+                 Desktop: right side
+                 Mobile: below label
+            ========================== -->
 
-            <div class="btn-box">
+            <div class="hero-visual">
 
-                <a href="#projects" class="btn">
-                    View My Work
-                    <i class='bx bx-right-arrow-alt'></i>
-                </a>
+                <div class="hero-image">
 
-                <a href="#contact" class="btn btn-outline">
-                    Let's Talk
-                    <i class='bx bx-message-rounded-dots'></i>
-                </a>
+                    <img
+                        src="Images/J.jpg"
+                        alt="Lawani Jeremiah - Full-Stack Developer"
+                    >
+
+                </div>
+
+                <span class="hero-ring hero-ring-one"></span>
+                <span class="hero-ring hero-ring-two"></span>
 
             </div>
 
 
-            <!-- TECHNOLOGIES -->
 
-            <div class="home-tech">
+            <!-- =========================
+                 HERO TEXT
+            ========================== -->
 
-                <span class="tech-label">
-                    Building with
-                </span>
+            <div class="hero-text">
 
-                <div class="tech-list">
+                <h1 class="hero-heading">
+                    Hi, I'm
+                    <span>Lawani Jeremiah</span>
+                </h1>
 
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Node.js</span>
-                    <span>PostgreSQL</span>
+
+                <h2 class="hero-title">
+                    I Build Digital Products
+                </h2>
+
+
+                <p class="hero-description">
+                    I design and develop modern web applications that solve
+                    real-world problems. From intuitive interfaces to scalable
+                    backend systems, I turn ideas into reliable digital products.
+                </p>
+
+
+
+                <!-- =========================
+                     HERO BUTTONS
+                ========================== -->
+
+                <div class="hero-actions">
+
+                    <a
+                        href="#projects"
+                        class="hero-btn hero-btn-primary"
+                    >
+                        <span>View My Work</span>
+                        <i class="bx bx-right-arrow-alt"></i>
+                    </a>
+
+
+                    <a
+                        href="#contact"
+                        class="hero-btn hero-btn-secondary"
+                    >
+                        <span>Let's Talk</span>
+                        <i class="bx bx-message-rounded-dots"></i>
+                    </a>
+
+                </div>
+
+
+
+                <!-- =========================
+                     TECHNOLOGIES
+                ========================== -->
+
+                <div class="hero-tech">
+
+                    <span class="hero-tech-label">
+                        Building with
+                    </span>
+
+
+                    <div class="hero-tech-list">
+
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>PostgreSQL</span>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =========================
+                     SOCIAL LINKS
+                ========================== -->
+
+                <div class="hero-socials">
+
+                    <a
+                        href="https://github.com/Billionaire-Developer"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub"
+                    >
+                        <i class="bx bxl-github"></i>
+                    </a>
+
+
+                    <a
+                        href="https://twitter.com/BillionaireDeve"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Twitter"
+                    >
+                        <i class="bx bxl-twitter"></i>
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn"
+                    >
+                        <i class="bx bxl-linkedin"></i>
+                    </a>
 
                 </div>
 
             </div>
-
-
-            <!-- SOCIAL LINKS -->
-
-            <div class="home-socials">
-
-                <a
-                    href="https://github.com/Billionaire-Developer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                >
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a
-                    href="https://twitter.com/BillionaireDeve"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Twitter"
-                >
-                    <i class='bx bxl-twitter'></i>
-                </a>
-
-                <a
-                    href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                >
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-            </div>
-
-        </div>
-
-
-        <!-- =====================
-             HERO IMAGE
-        ====================== -->
-
-        <div class="home-visual">
-
-            <div class="home-image">
-
-                <img
-                    src="Images/J.jpg"
-                    alt="Lawani Jeremiah - Full-Stack Developer"
-                >
-
-            </div>
-
-            <div class="home-image-decoration"></div>
 
         </div>
 
@@ -401,166 +413,356 @@
 
 </section>
 
-<!--Education section design-->
 
-    <section class="education" id="education">
-        <h2 class="heading">My <span>Journey</span></h2>
 
-        <div class="education-row">
-            <div class="education-column">
-                <h3 class="title">Education</h3>
-                <div class="education-box">
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2024 - Present</div>
-                            <h3>Bachelor's Degree - BYU-IDAHO</h3>
-                            <p>BYU-IDAHO is where I gained the skill, knowledge and experience for software development and built a strong foundation in problem-solving, collaboration, and real-world project execution.</p>
-                        </div>
-                    </div>
+   <!-- =====================================================
+     SKILLS SECTION
+===================================================== -->
 
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2025</div>
-                            <h3>Associate Degree - Brigham Young University</h3>
-                            <p>Brigham Young University is a private research university in provo, utah united state. Studied Web and Computer Programming.</p>
-                        </div>
-                    </div>
+<section class="skills" id="skills">
 
-                    <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2023 - 2024</div>
-                            <h3>National Diploma - YabaTech</h3>
-                            <p>I gained a diploma in Yaba college of Technology in computer science.
-                            </p>
-                        </div>
-                    </div>
+    <div class="skills-container">
 
-                       <div class="education-content">
-                        <div class="content">
-                            <div class="year"><i class='bx bxs-calendar'></i>> 2018</div>
-                            <h3>Certificate - Aiyedun Computer Institute</h3>
-                            <p>I got a certificate in Aiyedun computer institute where I gained knowledge 
-                                and mastery of the microsoft ecosystem as well as design packages.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+        <!-- =========================
+             SECTION HEADER
+        ========================== -->
 
-                <div class="education-column">
-                    <h3 class="title">Experience</h3>
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2023 </div>
-                                <h3>Web Development - Google</h3>
-                                <p>- Responsible for designing new user interfacing feature<br>
-                                    - Building reusable codes<br> 
-                                    - Determining the structure and design of webpages<br> 
-                                </p>
-                            </div>
-                        </div>
-    
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2023</div>
-                                <h3>UI/UX Designer - Hagital</h3>
-                                <p>- Designed beautiful and user friendly pages ranging from Web3, Fintech etc<br> 
-                                    - Colaborated with the developer to bring all of the beautiful desgins to reality
-                                    - Ensured products are easy to use and navigate.</p>
-                            </div>
-                        </div>
-    
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2024</div>
-                                <h3>Technical Support - Top Universe International</h3>
-                                <p>- Guided users through troubleshooting steps <br>
-                                - Maintained network system through regular testing and monitoring <br>
-                                - Troubleshoot and resolved technical issues reported by users<br>
-                                - Coped with the challenges and changes of the industry </p>
-                            </div>
-                        </div>
+        <div class="skills-header">
 
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year"><i class='bx bxs-calendar'></i>> 2024 </div>
-                                <h3>Data Entry - Springboard</h3>
-                                <p>- Verified data for completeness and accurac <br>
-                                - Reviewed and accurately enter data into computer database system <br>
-                                - Proficiency in Microsoft Office and database management software<br>
-                                - Met deadlines and deliver reviews on time </p>
-                            </div>
-                        </div>
-                    </div>
-            </div>
+            <p class="skills-label">
+                MY EXPERTISE
+            </p>
+
+            <h2 class="skills-heading">
+                Technologies & <span>Skills</span>
+            </h2>
+
+            <p class="skills-description">
+                The technologies, tools, and professional skills I use
+                to design, build, deploy, and maintain modern digital
+                products.
+            </p>
+
         </div>
-    </section>
 
-    <!--Sills section design-->
 
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>skills</span></h2>
+        <!-- =========================
+             TECHNICAL SKILLS
+        ========================== -->
 
-        <div class="skills-row">
-            <div class="skills-column">
-                <h3 class="title">Coding skills</h3>
+        <div class="skills-grid">
 
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Programming languages (Java, Python, Javascript, .NET) <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Data structure and Algorithm <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Database Management (SQL) <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Web development framework (React, Angular, Node,js, Express.js) <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Cloud Computing <span>85%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+
+            <!-- =================================================
+                 FRONTEND
+            ================================================== -->
+
+            <article class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <div class="skill-icon">
+                        <i class='bx bx-code-alt'></i>
                     </div>
-                </div>
-            </div>
 
-            <div class="skills-column">
-                <h3 class="title">Professional skills</h3>
+                    <div>
+                        <p class="skill-category">
+                            DEVELOPMENT
+                        </p>
 
-                <div class="skills-box">
-                    <div class="skills-content">
-                        <div class="progress">
-                            <h3>Problem - solving <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Communication <span>80%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Teamwork <span>95%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Time Management <span>100%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
-                        <div class="progress">
-                            <h3>Continous Learning <span>90%</span></h3>
-                            <div class="bar"><span></span></div>
-                        </div>
+                        <h3>
+                            Frontend Development
+                        </h3>
                     </div>
+
                 </div>
-            </div>
+
+
+                <p class="skill-card-description">
+                    Building responsive, interactive, and user-focused
+                    web interfaces.
+                </p>
+
+
+                <div class="skill-tags">
+
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Next.js</span>
+                    <span>Bootstrap</span>
+                    <span>SCSS</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 BACKEND
+            ================================================== -->
+
+            <article class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <div class="skill-icon">
+                        <i class='bx bx-server'></i>
+                    </div>
+
+                    <div>
+                        <p class="skill-category">
+                            DEVELOPMENT
+                        </p>
+
+                        <h3>
+                            Backend Development
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <p class="skill-card-description">
+                    Developing APIs, server-side applications, business
+                    logic, authentication, and backend systems.
+                </p>
+
+
+                <div class="skill-tags">
+
+                    <span>Node.js</span>
+                    <span>Express.js</span>
+                    <span>Python</span>
+                    <span>Django</span>
+                    <span>REST APIs</span>
+                    <span>JWT</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 DATABASE
+            ================================================== -->
+
+            <article class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <div class="skill-icon">
+                        <i class='bx bx-data'></i>
+                    </div>
+
+                    <div>
+                        <p class="skill-category">
+                            DATA
+                        </p>
+
+                        <h3>
+                            Databases
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <p class="skill-card-description">
+                    Designing, managing, and working with structured and
+                    application data.
+                </p>
+
+
+                <div class="skill-tags">
+
+                    <span>PostgreSQL</span>
+                    <span>MySQL</span>
+                    <span>MongoDB</span>
+                    <span>SQL</span>
+                    <span>Supabase</span>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- =================================================
+                 DEVOPS & TOOLS
+            ================================================== -->
+
+            <article class="skill-card">
+
+                <div class="skill-card-header">
+
+                    <div class="skill-icon">
+                        <i class='bx bx-cloud'></i>
+                    </div>
+
+                    <div>
+                        <p class="skill-category">
+                            INFRASTRUCTURE
+                        </p>
+
+                        <h3>
+                            DevOps & Tools
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <p class="skill-card-description">
+                    Working with development tools, version control,
+                    deployment platforms, and application environments.
+                </p>
+
+
+                <div class="skill-tags">
+
+                    <span>Git</span>
+                    <span>GitHub</span>
+                    <span>Docker</span>
+                    <span>Vercel</span>
+                    <span>Render</span>
+                    <span>Linux</span>
+
+                </div>
+
+            </article>
+
         </div>
-    </section>
+
+
+
+        <!-- =================================================
+             PROFESSIONAL SKILLS
+        ================================================== -->
+
+        <div class="professional-skills">
+
+            <div class="professional-header">
+
+                <p class="skills-label">
+                    HOW I WORK
+                </p>
+
+                <h3>
+                    Professional <span>Skills</span>
+                </h3>
+
+            </div>
+
+
+            <div class="professional-grid">
+
+
+                <div class="professional-skill">
+
+                    <i class='bx bx-bulb'></i>
+
+                    <div>
+                        <h4>Problem Solving</h4>
+
+                        <p>
+                            Breaking complex problems into practical
+                            and manageable solutions.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="professional-skill">
+
+                    <i class='bx bx-group'></i>
+
+                    <div>
+                        <h4>Teamwork</h4>
+
+                        <p>
+                            Collaborating effectively with developers,
+                            designers, and other stakeholders.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="professional-skill">
+
+                    <i class='bx bx-conversation'></i>
+
+                    <div>
+                        <h4>Communication</h4>
+
+                        <p>
+                            Clearly communicating ideas, technical
+                            decisions, and project requirements.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="professional-skill">
+
+                    <i class='bx bx-refresh'></i>
+
+                    <div>
+                        <h4>Continuous Learning</h4>
+
+                        <p>
+                            Continuously learning new technologies and
+                            improving development practices.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="professional-skill">
+
+                    <i class='bx bx-time-five'></i>
+
+                    <div>
+                        <h4>Time Management</h4>
+
+                        <p>
+                            Organizing tasks and priorities to deliver
+                            work efficiently and consistently.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="professional-skill">
+
+                    <i class='bx bx-target-lock'></i>
+
+                    <div>
+                        <h4>Attention to Detail</h4>
+
+                        <p>
+                            Paying attention to functionality, usability,
+                            quality, and maintainability.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
 
 <!-- Projects Section -->
 <section class="projects" id="projects">
@@ -723,6 +925,359 @@
         </article>
 
     </div>
+</section>
+
+<!-- =====================================================
+     EXPERIENCE / JOURNEY SECTION
+===================================================== -->
+
+<section class="experience" id="experience">
+
+    <div class="experience-container">
+
+        <!-- =========================
+             SECTION HEADER
+        ========================== -->
+
+        <div class="experience-header">
+
+            <p class="experience-label">
+                MY JOURNEY
+            </p>
+
+            <h2 class="experience-heading">
+                Education & <span>Experience</span>
+            </h2>
+
+            <p class="experience-description">
+                My academic background and professional experience have
+                shaped the skills and perspective I bring to software
+                development and digital problem-solving.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             JOURNEY GRID
+        ========================== -->
+
+        <div class="experience-grid">
+
+
+            <!-- =================================================
+                 EDUCATION
+            ================================================== -->
+
+            <div class="experience-column">
+
+                <div class="experience-column-header">
+
+                    <div class="experience-header-icon">
+                        <i class='bx bxs-graduation'></i>
+                    </div>
+
+                    <div>
+                        <p class="experience-column-label">
+                            EDUCATION
+                        </p>
+
+                        <h3>
+                            Academic Background
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <!-- Education Items -->
+
+                <div class="experience-list">
+
+
+                    <!-- Education 1 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2024 - Present
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Bachelor's Degree in Software Development
+                        </h4>
+
+                        <p class="experience-institution">
+                            Brigham Young University–Idaho
+                        </p>
+
+                        <p class="experience-card-description">
+                            Developing strong skills in software development,
+                            programming, problem-solving, databases, web
+                            technologies, and real-world project development.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Education 2 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2025
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Associate Degree in Web & Computer Programming
+                        </h4>
+
+                        <p class="experience-institution">
+                            Brigham Young University–Idaho
+                        </p>
+
+                        <p class="experience-card-description">
+                            Built a strong foundation in web development,
+                            programming fundamentals, software development,
+                            and computer science principles.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Education 3 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2023 - 2024
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            National Diploma in Computer Science
+                        </h4>
+
+                        <p class="experience-institution">
+                            Yaba College of Technology
+                        </p>
+
+                        <p class="experience-card-description">
+                            Gained foundational knowledge in computer science,
+                            programming, information technology, and
+                            computer systems.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Education 4 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2018
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Computer & Digital Skills Certificate
+                        </h4>
+
+                        <p class="experience-institution">
+                            Aiyedun Computer Institute
+                        </p>
+
+                        <p class="experience-card-description">
+                            Developed practical knowledge of computer
+                            operations, Microsoft Office tools, and
+                            digital design applications.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 PROFESSIONAL EXPERIENCE
+            ================================================== -->
+
+            <div class="experience-column">
+
+                <div class="experience-column-header">
+
+                    <div class="experience-header-icon">
+                        <i class='bx bx-briefcase-alt-2'></i>
+                    </div>
+
+                    <div>
+                        <p class="experience-column-label">
+                            EXPERIENCE
+                        </p>
+
+                        <h3>
+                            Professional Experience
+                        </h3>
+                    </div>
+
+                </div>
+
+
+                <!-- Experience Items -->
+
+                <div class="experience-list">
+
+
+                    <!-- Experience 1 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2023
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Web Development
+                        </h4>
+
+                        <p class="experience-institution">
+                            Google
+                        </p>
+
+                        <p class="experience-card-description">
+                            Worked on web development tasks including user
+                            interface features, reusable code, webpage
+                            structure, and responsive design.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Experience 2 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2023
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            UI/UX Designer
+                        </h4>
+
+                        <p class="experience-institution">
+                            Hagital
+                        </p>
+
+                        <p class="experience-card-description">
+                            Designed user-friendly interfaces for digital
+                            products across areas such as Web3 and fintech,
+                            while collaborating with developers to bring
+                            designs to life.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Experience 3 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2024
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Technical Support
+                        </h4>
+
+                        <p class="experience-institution">
+                            Top Universe International
+                        </p>
+
+                        <p class="experience-card-description">
+                            Provided technical support, guided users through
+                            troubleshooting processes, monitored network
+                            systems, and resolved reported technical issues.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Experience 4 -->
+
+                    <article class="experience-card">
+
+                        <div class="experience-card-top">
+
+                            <span class="experience-date">
+                                <i class='bx bxs-calendar'></i>
+                                2024
+                            </span>
+
+                        </div>
+
+                        <h4>
+                            Data Entry
+                        </h4>
+
+                        <p class="experience-institution">
+                            Springboard
+                        </p>
+
+                        <p class="experience-card-description">
+                            Verified and entered data accurately, maintained
+                            database records, worked with Microsoft Office
+                            tools, and consistently met review deadlines.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- Contact Section -->
