@@ -1116,6 +1116,12 @@ span{
 .card-4 {
     background-image: url('/Images/Acme.avif');
 }
+.card-5 {
+    background-image: url('/Images/Grid.png');
+}
+.card-6 {
+    background-image: url('/Images/Adire\ laundry.png');
+}
 .project-cards h2{
     padding: 10px;
     margin:0;
