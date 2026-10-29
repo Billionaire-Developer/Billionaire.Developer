@@ -2321,7 +2321,7 @@ span{
 .engineering-highlight p {
     margin: 0 0 1rem;
     color: var(--muted-color, #a0adbd);
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: 1.75;
 }
 
@@ -2331,14 +2331,14 @@ span{
     color: var(--main-color, #00f5a0);
     border: 1px solid var(--border-color, rgba(255,255,255,.09));
     border-radius: 999px;
-    font-size: 0.78rem;
+    font-size: 1rem;
     font-weight: 600;
 }
 
 .engineering-highlights-note {
     margin-top: 1.25rem;
     color: var(--muted-color, #a0adbd);
-    font-size: 0.88rem;
+    font-size: 1rem;
     line-height: 1.7;
 }
 
@@ -2427,7 +2427,7 @@ span{
 
 #gridsentinel-case-study .case-study-panel p:not(.section-label) {
     margin-bottom: 0;
-    font-size: .92rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: var(--muted-color, #a0adbd);
 }
@@ -2473,7 +2473,7 @@ span{
 
 #gridsentinel-case-study .decision-card p {
     margin-bottom: 0;
-    font-size: .91rem;
+    font-size: 1rem;
     line-height: 1.7;
     color: var(--muted-color, #a0adbd);
 }
@@ -2510,20 +2510,20 @@ span{
 
 #gridsentinel-case-study .architecture-node h4 {
     margin: 8px 0 6px;
-    font-size: .96rem;
+    font-size: 1rem;
     line-height: 1.4;
 }
 
 #gridsentinel-case-study .architecture-node p {
     margin: 0;
-    font-size: .82rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: var(--muted-color, #a0adbd);
 }
 
 #gridsentinel-case-study .architecture-node-label {
     color: var(--main-color, #00f5a0);
-    font-size: .7rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: .08em;
 }
@@ -2538,7 +2538,7 @@ span{
 
 #gridsentinel-case-study .case-study-note {
     margin-top: 12px;
-    font-size: .84rem;
+    font-size: 1rem;
     line-height: 1.7;
 }
 
@@ -2559,7 +2559,7 @@ span{
 
 #gridsentinel-case-study .case-study-next-steps p,
 #gridsentinel-case-study .case-study-next-steps li {
-    font-size: .92rem;
+    font-size: 1rem;
     line-height: 1.75;
     color: var(--muted-color, #a0adbd);
 }
@@ -2693,7 +2693,7 @@ span{
     background: var(--card-bg, #121923);
     border: 1px solid var(--main-color, #00f5a0);
     border-radius: 8px;
-    font-size: .92rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.3;
     text-align: center;
@@ -2731,7 +2731,7 @@ span{
     }
 
     #gridsentinel-case-study .case-study-header .section-description {
-        font-size: .95rem;
+        font-size: 1rem;
     }
 
     #gridsentinel-case-study .case-study-actions {
@@ -2741,7 +2741,7 @@ span{
     #gridsentinel-case-study .case-study-actions .case-study-button {
         min-height: 44px;
         padding: 11px 15px;
-        font-size: .86rem;
+        font-size: 1rem;
     }
 }
 
@@ -2804,7 +2804,7 @@ span{
     background: var(--card-bg, #121923);
     border: 1px solid var(--main-color, #00f5a0);
     border-radius: 8px;
-    font-size: .92rem;
+    font-size: 1rem;
     font-weight: 600;
     line-height: 1.3;
     text-align: center;
@@ -2841,7 +2841,7 @@ span{
     }
 
     #excellent-hire-case-study .case-study-header .section-description {
-        font-size: .95rem;
+        font-size: 1rem;
     }
 
     #excellent-hire-case-study .case-study-actions {
@@ -2851,7 +2851,7 @@ span{
     #excellent-hire-case-study .case-study-actions .case-study-button {
         min-height: 44px;
         padding: 11px 15px;
-        font-size: .86rem;
+        font-size: 1rem;
     }
 }
 
@@ -2977,7 +2977,7 @@ span{
 
 #meridian-case-study .case-study-panel p {
     margin: 0;
-    font-size: 0.94rem;
+    font-size: 1rem;
     line-height: 1.7;
     overflow-wrap: anywhere;
 }
@@ -3024,7 +3024,7 @@ span{
 
 #meridian-case-study .decision-card p {
     margin: 0 0 14px;
-    font-size: 0.93rem;
+    font-size: 1rem;
     line-height: 1.7;
     overflow-wrap: anywhere;
 }
@@ -3108,7 +3108,7 @@ span{
 .experience .experience-column-label {
   margin: 0 0 10px;
   color: var(--main-color, #00f5a0);
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1.8px;
   text-transform: uppercase;
@@ -3173,7 +3173,7 @@ span{
 
 .experience .experience-column-label {
   margin-bottom: 4px;
-  font-size: 0.68rem;
+  font-size: 1rem;
 }
 
 .experience .experience-column-header h3 {
@@ -3246,14 +3246,14 @@ span{
   border-radius: 7px;
   background: var(--card-bg, #121923);
   color: var(--muted-color, #a0adbd);
-  font-size: 0.76rem;
+  font-size: 1rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
 .experience .experience-date i {
   color: var(--main-color, #00f5a0);
-  font-size: 0.9rem;
+  font-size: 1rem;
 }
 
 .experience .experience-status {
@@ -3305,7 +3305,7 @@ span{
   position: relative;
   padding-left: 19px;
   color: var(--muted-color, #a0adbd);
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.75;
 }
 
@@ -3333,7 +3333,7 @@ span{
 .experience .experience-projects-label {
   margin: 0 0 3px;
   color: var(--muted-color, #a0adbd);
-  font-size: 0.68rem;
+  font-size: 1rem;
   font-weight: 700;
   letter-spacing: 1.2px;
 }
@@ -3348,7 +3348,7 @@ span{
   border-radius: 8px;
   background: var(--card-bg, #121923);
   color: var(--text-color, #f1f5f9);
-  font-size: 0.83rem;
+  font-size: 1rem;
   font-weight: 600;
   text-decoration: none;
   transition:
@@ -3384,7 +3384,7 @@ span{
   border-radius: 6px;
   background: rgba(0, 245, 160, 0.045);
   color: var(--main-color, #00f5a0);
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 550;
   line-height: 1.4;
 }
@@ -3470,7 +3470,7 @@ span{
 
   .experience .experience-card-description,
   .experience .experience-responsibilities li {
-    font-size: 0.82rem;
+    font-size: 1rem;
   }
 }
 
