@@ -1,1614 +1,1587 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta name="google-site-verification" content="su6hKnljs-ovrNv_Uv7HlYIiafqII0BDHzDBWQljezo" />
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta
+      name="google-site-verification"
+      content="su6hKnljs-ovrNv_Uv7HlYIiafqII0BDHzDBWQljezo"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="CSS/style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init({
-        publicKey: "RwmexWi7OP-t5IsPE",
-      });
-   })();
-</script>
-</head>
-<body>
-   
-
-<!-- =====================================================
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "RwmexWi7OP-t5IsPE",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- =====================================================
      HEADER
 ===================================================== -->
 
-<header class="header">
+    <header class="header">
+      <a href="#home" class="logo"> Billionaire-<span>Developer</span> </a>
 
-    <a href="#home" class="logo">
-        Billionaire-<span>Developer</span>
-    </a>
-
-    <button
+      <button
         class="menu-icon bx bx-menu"
         id="menu-icon"
         type="button"
         aria-label="Open navigation menu"
         aria-expanded="false"
         aria-controls="navbar"
-    ></button>
+      ></button>
 
-    <nav class="navbar" id="navbar" aria-label="Main navigation">
+      <nav class="navbar" id="navbar" aria-label="Main navigation">
         <a href="#home" class="active" aria-current="page">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
-    </nav>
+      </nav>
+    </header>
 
-</header>
-
-
-<!-- =====================================================
+    <!-- =====================================================
      HOME / HERO SECTION
 ===================================================== -->
 
-<section class="home" id="home" aria-labelledby="hero-heading">
-
-    <div class="hero-container">
-
+    <section class="home" id="home" aria-labelledby="hero-heading">
+      <div class="hero-container">
         <div class="hero-content">
+          <!-- HERO LABEL -->
 
-            <!-- HERO LABEL -->
+          <p class="hero-label">SENIOR FULL-STACK ENGINEER</p>
 
-            <p class="hero-label">
-                SENIOR FULL-STACK ENGINEER
+          <!-- HERO IMAGE -->
+
+          <div class="hero-visual">
+            <div class="hero-image">
+              <img
+                src="Images/J.jpg"
+                alt="Lawani Jeremiah — Full-Stack Software Developer"
+                fetchpriority="high"
+              />
+            </div>
+
+            <span class="hero-ring hero-ring-one" aria-hidden="true"></span>
+
+            <span class="hero-ring hero-ring-two" aria-hidden="true"></span>
+          </div>
+
+          <!-- HERO TEXT -->
+
+          <div class="hero-text">
+            <h1 class="hero-heading" id="hero-heading">
+              Hi, I'm
+              <span>Lawani Jeremiah</span>
+            </h1>
+
+            <h2 class="hero-title">
+              I Build Reliable Software Products,
+              <span>From Architecture to Production.</span>
+            </h2>
+
+            <p class="hero-description">
+              I design and develop end-to-end web applications, combining
+              intuitive frontend experiences with robust backend services,
+              well-structured databases, and reliable deployment workflows. I
+              focus on solving real business problems, making thoughtful
+              engineering decisions, and building maintainable software that can
+              evolve with changing needs.
             </p>
 
+            <!-- HERO ACTIONS -->
 
-            <!-- HERO IMAGE -->
+            <div class="hero-actions">
+              <a href="#projects" class="hero-btn hero-btn-primary">
+                <span>Explore My Work</span>
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+              </a>
 
-            <div class="hero-visual">
-
-                <div class="hero-image">
-                    <img
-                        src="Images/J.jpg"
-                        alt="Lawani Jeremiah — Full-Stack Software Developer"
-                        fetchpriority="high"
-                    >
-                </div>
-
-                <span class="hero-ring hero-ring-one"
-                      aria-hidden="true"></span>
-
-                <span class="hero-ring hero-ring-two"
-                      aria-hidden="true"></span>
-
+              <a href="#contact" class="hero-btn hero-btn-secondary">
+                <span>Let's Connect</span>
+                <i class="bx bx-message-rounded-dots" aria-hidden="true"></i>
+              </a>
             </div>
 
+            <!-- CORE TECHNOLOGIES -->
 
-            <!-- HERO TEXT -->
+            <div class="hero-tech">
+              <span class="hero-tech-label"> Core Technologies </span>
 
-            <div class="hero-text">
-
-                <h1 class="hero-heading" id="hero-heading">
-                    Hi, I'm
-                    <span>Lawani Jeremiah</span>
-                </h1>
-
-                <h2 class="hero-title">
-                    I Build Reliable Software Products,
-                    <span>From Architecture to Production.</span>
-                </h2>
-
-                <p class="hero-description">
-                    I design and develop end-to-end web applications,
-                    combining intuitive frontend experiences with robust
-                    backend services, well-structured databases, and
-                    reliable deployment workflows.
-
-                    I focus on solving real business problems, making
-                    thoughtful engineering decisions, and building
-                    maintainable software that can evolve with changing needs.
-                </p>
-
-
-                <!-- HERO ACTIONS -->
-
-                <div class="hero-actions">
-
-                    <a
-                        href="#projects"
-                        class="hero-btn hero-btn-primary"
-                    >
-                        <span>Explore My Work</span>
-                        <i class="bx bx-right-arrow-alt"
-                           aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                        href="#contact"
-                        class="hero-btn hero-btn-secondary"
-                    >
-                        <span>Let's Connect</span>
-                        <i class="bx bx-message-rounded-dots"
-                           aria-hidden="true"></i>
-                    </a>
-
-                </div>
-
-
-                <!-- CORE TECHNOLOGIES -->
-
-                <div class="hero-tech">
-
-                    <span class="hero-tech-label">
-                        Core Technologies
-                    </span>
-
-                    <div class="hero-tech-list">
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Express.js</span>
-                        <span>PostgreSQL</span>
-                    </div>
-
-                </div>
-
-
-                <!-- SOCIAL LINKS -->
-
-                <div class="hero-socials">
-
-                    <a
-                        href="https://github.com/Billionaire-Developer"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub profile"
-                    >
-                        <i class="bx bxl-github"
-                           aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                        href="https://twitter.com/BillionaireDeve"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Twitter profile"
-                    >
-                        <i class="bx bxl-twitter"
-                           aria-hidden="true"></i>
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="LinkedIn profile"
-                    >
-                        <i class="bx bxl-linkedin"
-                           aria-hidden="true"></i>
-                    </a>
-
-                </div>
-
+              <div class="hero-tech-list">
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Express.js</span>
+                <span>PostgreSQL</span>
+              </div>
             </div>
 
+            <!-- SOCIAL LINKS -->
+
+            <div class="hero-socials">
+              <a
+                href="https://github.com/Billionaire-Developer"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub profile"
+              >
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://twitter.com/BillionaireDeve"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Twitter profile"
+              >
+                <i class="bx bxl-twitter" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn profile"
+              >
+                <i class="bx bxl-linkedin" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-<!-- =====================================================
+    <!-- =====================================================
      ENGINEERING IMPACT SECTION
 ===================================================== -->
 
-<section class="engineering-impact" id="engineering-impact"
-         aria-labelledby="impact-heading">
-
-    <div class="impact-container">
-
+    <section
+      class="engineering-impact"
+      id="engineering-impact"
+      aria-labelledby="impact-heading"
+    >
+      <div class="impact-container">
         <!-- SECTION INTRODUCTION -->
 
         <div class="impact-header">
+          <p class="impact-label">HOW I APPROACH ENGINEERING</p>
 
-            <p class="impact-label">
-                HOW I APPROACH ENGINEERING
-            </p>
+          <h2 id="impact-heading">Beyond Writing Code</h2>
 
-            <h2 id="impact-heading">
-                Beyond Writing Code
-            </h2>
-
-            <p class="impact-description">
-                Building valuable software requires more than implementing
-                features. I focus on the engineering practices that help
-                applications remain maintainable, secure, and dependable.
-            </p>
-
+          <p class="impact-description">
+            Building valuable software requires more than implementing features.
+            I focus on the engineering practices that help applications remain
+            maintainable, secure, and dependable.
+          </p>
         </div>
-
 
         <!-- IMPACT CARDS -->
 
         <div class="impact-grid">
+          <!-- ARCHITECTURE -->
 
+          <article class="impact-card">
+            <div class="impact-icon">
+              <i class="bx bx-git-branch" aria-hidden="true"></i>
+            </div>
 
-            <!-- ARCHITECTURE -->
+            <h3>Architecture</h3>
 
-            <article class="impact-card">
+            <p>
+              Designing clear application structures, maintainable APIs, and
+              well-organized data models that support evolving product
+              requirements.
+            </p>
 
-                <div class="impact-icon">
-                    <i class="bx bx-git-branch"
-                       aria-hidden="true"></i>
-                </div>
+            <a href="#projects" class="impact-link">
+              Explore my projects
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </a>
+          </article>
 
-                <h3>Architecture</h3>
+          <!-- PERFORMANCE -->
 
-                <p>
-                    Designing clear application structures, maintainable
-                    APIs, and well-organized data models that support
-                    evolving product requirements.
-                </p>
+          <article class="impact-card">
+            <div class="impact-icon">
+              <i class="bx bx-tachometer" aria-hidden="true"></i>
+            </div>
 
-                <a href="#projects" class="impact-link">
-                    Explore my projects
-                    <i class="bx bx-right-arrow-alt"
-                       aria-hidden="true"></i>
-                </a>
+            <h3>Performance</h3>
 
-            </article>
+            <p>
+              Evaluating application bottlenecks and making evidence-based
+              improvements to responsiveness, database queries, and resource
+              usage.
+            </p>
 
+            <a href="#projects" class="impact-link">
+              See my approach
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </a>
+          </article>
 
-            <!-- PERFORMANCE -->
+          <!-- RELIABILITY -->
 
-            <article class="impact-card">
+          <article class="impact-card">
+            <div class="impact-icon">
+              <i class="bx bx-shield-quarter" aria-hidden="true"></i>
+            </div>
 
-                <div class="impact-icon">
-                    <i class="bx bx-tachometer"
-                       aria-hidden="true"></i>
-                </div>
+            <h3>Reliability</h3>
 
-                <h3>Performance</h3>
+            <p>
+              Prioritizing appropriate validation, secure access controls,
+              meaningful error handling, and testing throughout the software
+              lifecycle.
+            </p>
 
-                <p>
-                    Evaluating application bottlenecks and making
-                    evidence-based improvements to responsiveness,
-                    database queries, and resource usage.
-                </p>
+            <a href="#skills" class="impact-link">
+              Explore my skills
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </a>
+          </article>
 
-                <a href="#projects" class="impact-link">
-                    See my approach
-                    <i class="bx bx-right-arrow-alt"
-                       aria-hidden="true"></i>
-                </a>
+          <!-- LEADERSHIP -->
 
-            </article>
+          <article class="impact-card">
+            <div class="impact-icon">
+              <i class="bx bx-group" aria-hidden="true"></i>
+            </div>
 
+            <h3>Leadership</h3>
 
-            <!-- RELIABILITY -->
+            <p>
+              Contributing to technical decisions, communicating trade-offs,
+              collaborating with teammates, and helping deliver solutions that
+              meet project goals.
+            </p>
 
-            <article class="impact-card">
-
-                <div class="impact-icon">
-                    <i class="bx bx-shield-quarter"
-                       aria-hidden="true"></i>
-                </div>
-
-                <h3>Reliability</h3>
-
-                <p>
-                    Prioritizing appropriate validation, secure access
-                    controls, meaningful error handling, and testing
-                    throughout the software lifecycle.
-                </p>
-
-                <a href="#skills" class="impact-link">
-                    Explore my skills
-                    <i class="bx bx-right-arrow-alt"
-                       aria-hidden="true"></i>
-                </a>
-
-            </article>
-
-
-            <!-- LEADERSHIP -->
-
-            <article class="impact-card">
-
-                <div class="impact-icon">
-                    <i class="bx bx-group"
-                       aria-hidden="true"></i>
-                </div>
-
-                <h3>Leadership</h3>
-
-                <p>
-                    Contributing to technical decisions, communicating
-                    trade-offs, collaborating with teammates, and
-                    helping deliver solutions that meet project goals.
-                </p>
-
-                <a href="#experience" class="impact-link">
-                    View my experience
-                    <i class="bx bx-right-arrow-alt"
-                       aria-hidden="true"></i>
-                </a>
-
-            </article>
-
+            <a href="#experience" class="impact-link">
+              View my experience
+              <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+            </a>
+          </article>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- =========================
+    <!-- =========================
      ABOUT SECTION
 ========================= -->
 
-<section class="about" id="about">
-
-    <div class="about-container">
-
+    <section class="about" id="about">
+      <div class="about-container">
         <!-- =====================
              SECTION HEADER
         ====================== -->
 
         <div class="about-header">
+          <p class="about-label">ABOUT ME</p>
 
-            <p class="about-label">
-                ABOUT ME
-            </p>
+          <h2 class="about-heading">Who <span>I Am</span></h2>
 
-            <h2 class="about-heading">
-                Who <span>I Am</span>
-            </h2>
-
-            <p class="about-subtitle">
-                I build digital products that solve real problems
-                and create meaningful experiences for users.
-            </p>
-
+          <p class="about-subtitle">
+            I build digital products that solve real problems and create
+            meaningful experiences for users.
+          </p>
         </div>
-
 
         <!-- =====================
              ABOUT INTRODUCTION
         ====================== -->
 
         <div class="about-introduction">
+          <p class="about-lead">
+            I'm <strong>Lawani Jeremiah</strong>, a Full-Stack Developer
+            passionate about turning ideas into practical, reliable, and
+            scalable digital solutions.
+          </p>
 
-            <p class="about-lead">
-                I'm <strong>Lawani Jeremiah</strong>, a Full-Stack Developer
-                passionate about turning ideas into practical, reliable,
-                and scalable digital solutions.
-            </p>
+          <p>
+            I work across the full development process—from designing user
+            interfaces and building frontend applications to developing backend
+            systems, APIs, databases, and deployment solutions.
+          </p>
 
-            <p>
-                I work across the full development process—from designing
-                user interfaces and building frontend applications to
-                developing backend systems, APIs, databases, and deployment
-                solutions.
-            </p>
-
-            <p>
-                I enjoy working on projects that combine technology,
-                creativity, and problem-solving. Whether I'm building a
-                business application, educational platform, dashboard, or
-                custom web solution, my goal is to create software that is
-                useful, maintainable, and built to grow.
-            </p>
-
+          <p>
+            I enjoy working on projects that combine technology, creativity, and
+            problem-solving. Whether I'm building a business application,
+            educational platform, dashboard, or custom web solution, my goal is
+            to create software that is useful, maintainable, and built to grow.
+          </p>
         </div>
-
 
         <!-- =====================
              WHAT I BRING
         ====================== -->
 
         <div class="about-content">
+          <div class="about-column">
+            <p class="about-column-label">WHAT I BRING</p>
 
-            <div class="about-column">
+            <h3>From idea to <span>working product.</span></h3>
 
-                <p class="about-column-label">
-                    WHAT I BRING
-                </p>
+            <p>
+              I approach development with a focus on understanding the problem
+              first, then building a solution that is simple, functional, and
+              scalable.
+            </p>
+          </div>
 
-                <h3>
-                    From idea to <span>working product.</span>
-                </h3>
+          <div class="about-strengths">
+            <div class="about-strength">
+              <div class="about-strength-icon">
+                <i class="bx bx-code-alt"></i>
+              </div>
+
+              <div>
+                <h4>Clean Development</h4>
+
+                <p>Writing structured, maintainable, and scalable code.</p>
+              </div>
+            </div>
+
+            <div class="about-strength">
+              <div class="about-strength-icon">
+                <i class="bx bx-bulb"></i>
+              </div>
+
+              <div>
+                <h4>Problem Solving</h4>
 
                 <p>
-                    I approach development with a focus on understanding
-                    the problem first, then building a solution that is
-                    simple, functional, and scalable.
+                  Turning complex problems into practical digital solutions.
                 </p>
-
+              </div>
             </div>
 
+            <div class="about-strength">
+              <div class="about-strength-icon">
+                <i class="bx bx-devices"></i>
+              </div>
 
-            <div class="about-strengths">
+              <div>
+                <h4>User Focused</h4>
 
-                <div class="about-strength">
-
-                    <div class="about-strength-icon">
-                        <i class='bx bx-code-alt'></i>
-                    </div>
-
-                    <div>
-                        <h4>Clean Development</h4>
-
-                        <p>
-                            Writing structured, maintainable, and
-                            scalable code.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="about-strength">
-
-                    <div class="about-strength-icon">
-                        <i class='bx bx-bulb'></i>
-                    </div>
-
-                    <div>
-                        <h4>Problem Solving</h4>
-
-                        <p>
-                            Turning complex problems into practical
-                            digital solutions.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="about-strength">
-
-                    <div class="about-strength-icon">
-                        <i class='bx bx-devices'></i>
-                    </div>
-
-                    <div>
-                        <h4>User Focused</h4>
-
-                        <p>
-                            Creating intuitive experiences that work
-                            across different devices.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="about-strength">
-
-                    <div class="about-strength-icon">
-                        <i class='bx bx-rocket'></i>
-                    </div>
-
-                    <div>
-                        <h4>Continuous Growth</h4>
-
-                        <p>
-                            Constantly learning and improving my
-                            development skills.
-                        </p>
-                    </div>
-
-                </div>
-
+                <p>
+                  Creating intuitive experiences that work across different
+                  devices.
+                </p>
+              </div>
             </div>
 
+            <div class="about-strength">
+              <div class="about-strength-icon">
+                <i class="bx bx-rocket"></i>
+              </div>
+
+              <div>
+                <h4>Continuous Growth</h4>
+
+                <p>Constantly learning and improving my development skills.</p>
+              </div>
+            </div>
+          </div>
         </div>
-
 
         <!-- =====================
              CTA
         ====================== -->
 
         <div class="about-cta">
+          <a href="#projects" class="about-btn">
+            <span>Explore My Projects</span>
 
-            <a href="#projects" class="about-btn">
-
-                <span>Explore My Projects</span>
-
-                <i class='bx bx-right-arrow-alt'></i>
-
-            </a>
-
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-
-   <!-- =====================================================
+    <!-- =====================================================
      SKILLS SECTION
 ===================================================== -->
 
-<section class="skills" id="skills">
-
-    <div class="skills-container">
-
+    <section class="skills" id="skills">
+      <div class="skills-container">
         <!-- =========================
              SECTION HEADER
         ========================== -->
 
         <div class="skills-header">
+          <p class="skills-label">MY EXPERTISE</p>
 
-            <p class="skills-label">
-                MY EXPERTISE
-            </p>
+          <h2 class="skills-heading">Technologies & <span>Skills</span></h2>
 
-            <h2 class="skills-heading">
-                Technologies & <span>Skills</span>
-            </h2>
-
-            <p class="skills-description">
-                The technologies, tools, and professional skills I use
-                to design, build, deploy, and maintain modern digital
-                products.
-            </p>
-
+          <p class="skills-description">
+            The technologies, tools, and professional skills I use to design,
+            build, deploy, and maintain modern digital products.
+          </p>
         </div>
-
 
         <!-- =========================
              TECHNICAL SKILLS
         ========================== -->
 
         <div class="skills-grid">
-
-
-            <!-- =================================================
+          <!-- =================================================
                  FRONTEND
             ================================================== -->
 
-            <article class="skill-card">
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="bx bx-code-alt"></i>
+              </div>
 
-                <div class="skill-card-header">
+              <div>
+                <p class="skill-category">DEVELOPMENT</p>
 
-                    <div class="skill-icon">
-                        <i class='bx bx-code-alt'></i>
-                    </div>
+                <h3>Frontend Development</h3>
+              </div>
+            </div>
 
-                    <div>
-                        <p class="skill-category">
-                            DEVELOPMENT
-                        </p>
+            <p class="skill-card-description">
+              Building responsive, interactive, and user-focused web interfaces.
+            </p>
 
-                        <h3>
-                            Frontend Development
-                        </h3>
-                    </div>
+            <div class="skill-tags">
+              <span>HTML5</span>
+              <span>CSS3</span>
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Bootstrap</span>
+              <span>SCSS</span>
+            </div>
+          </article>
 
-                </div>
-
-
-                <p class="skill-card-description">
-                    Building responsive, interactive, and user-focused
-                    web interfaces.
-                </p>
-
-
-                <div class="skill-tags">
-
-                    <span>HTML5</span>
-                    <span>CSS3</span>
-                    <span>JavaScript</span>
-                    <span>React</span>
-                    <span>Next.js</span>
-                    <span>Bootstrap</span>
-                    <span>SCSS</span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- =================================================
+          <!-- =================================================
                  BACKEND
             ================================================== -->
 
-            <article class="skill-card">
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="bx bx-server"></i>
+              </div>
 
-                <div class="skill-card-header">
+              <div>
+                <p class="skill-category">DEVELOPMENT</p>
 
-                    <div class="skill-icon">
-                        <i class='bx bx-server'></i>
-                    </div>
+                <h3>Backend Development</h3>
+              </div>
+            </div>
 
-                    <div>
-                        <p class="skill-category">
-                            DEVELOPMENT
-                        </p>
+            <p class="skill-card-description">
+              Developing APIs, server-side applications, business logic,
+              authentication, and backend systems.
+            </p>
 
-                        <h3>
-                            Backend Development
-                        </h3>
-                    </div>
+            <div class="skill-tags">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>Python</span>
+              <span>Django</span>
+              <span>REST APIs</span>
+              <span>JWT</span>
+            </div>
+          </article>
 
-                </div>
-
-
-                <p class="skill-card-description">
-                    Developing APIs, server-side applications, business
-                    logic, authentication, and backend systems.
-                </p>
-
-
-                <div class="skill-tags">
-
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>Python</span>
-                    <span>Django</span>
-                    <span>REST APIs</span>
-                    <span>JWT</span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- =================================================
+          <!-- =================================================
                  DATABASE
             ================================================== -->
 
-            <article class="skill-card">
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="bx bx-data"></i>
+              </div>
 
-                <div class="skill-card-header">
+              <div>
+                <p class="skill-category">DATA</p>
 
-                    <div class="skill-icon">
-                        <i class='bx bx-data'></i>
-                    </div>
+                <h3>Databases</h3>
+              </div>
+            </div>
 
-                    <div>
-                        <p class="skill-category">
-                            DATA
-                        </p>
+            <p class="skill-card-description">
+              Designing, managing, and working with structured and application
+              data.
+            </p>
 
-                        <h3>
-                            Databases
-                        </h3>
-                    </div>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>MySQL</span>
+              <span>MongoDB</span>
+              <span>SQL</span>
+              <span>Supabase</span>
+            </div>
+          </article>
 
-                </div>
-
-
-                <p class="skill-card-description">
-                    Designing, managing, and working with structured and
-                    application data.
-                </p>
-
-
-                <div class="skill-tags">
-
-                    <span>PostgreSQL</span>
-                    <span>MySQL</span>
-                    <span>MongoDB</span>
-                    <span>SQL</span>
-                    <span>Supabase</span>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- =================================================
+          <!-- =================================================
                  DEVOPS & TOOLS
             ================================================== -->
 
-            <article class="skill-card">
+          <article class="skill-card">
+            <div class="skill-card-header">
+              <div class="skill-icon">
+                <i class="bx bx-cloud"></i>
+              </div>
 
-                <div class="skill-card-header">
+              <div>
+                <p class="skill-category">INFRASTRUCTURE</p>
 
-                    <div class="skill-icon">
-                        <i class='bx bx-cloud'></i>
-                    </div>
+                <h3>DevOps & Tools</h3>
+              </div>
+            </div>
 
-                    <div>
-                        <p class="skill-category">
-                            INFRASTRUCTURE
-                        </p>
+            <p class="skill-card-description">
+              Working with development tools, version control, deployment
+              platforms, and application environments.
+            </p>
 
-                        <h3>
-                            DevOps & Tools
-                        </h3>
-                    </div>
-
-                </div>
-
-
-                <p class="skill-card-description">
-                    Working with development tools, version control,
-                    deployment platforms, and application environments.
-                </p>
-
-
-                <div class="skill-tags">
-
-                    <span>Git</span>
-                    <span>GitHub</span>
-                    <span>Docker</span>
-                    <span>Vercel</span>
-                    <span>Render</span>
-                    <span>Linux</span>
-
-                </div>
-
-            </article>
-
+            <div class="skill-tags">
+              <span>Git</span>
+              <span>GitHub</span>
+              <span>Docker</span>
+              <span>Vercel</span>
+              <span>Render</span>
+              <span>Linux</span>
+            </div>
+          </article>
         </div>
-
-
 
         <!-- =================================================
              PROFESSIONAL SKILLS
         ================================================== -->
 
         <div class="professional-skills">
+          <div class="professional-header">
+            <p class="skills-label">HOW I WORK</p>
 
-            <div class="professional-header">
+            <h3>Professional <span>Skills</span></h3>
+          </div>
 
-                <p class="skills-label">
-                    HOW I WORK
+          <div class="professional-grid">
+            <div class="professional-skill">
+              <i class="bx bx-bulb"></i>
+
+              <div>
+                <h4>Problem Solving</h4>
+
+                <p>
+                  Breaking complex problems into practical and manageable
+                  solutions.
                 </p>
-
-                <h3>
-                    Professional <span>Skills</span>
-                </h3>
-
+              </div>
             </div>
 
+            <div class="professional-skill">
+              <i class="bx bx-group"></i>
 
-            <div class="professional-grid">
+              <div>
+                <h4>Teamwork</h4>
 
-
-                <div class="professional-skill">
-
-                    <i class='bx bx-bulb'></i>
-
-                    <div>
-                        <h4>Problem Solving</h4>
-
-                        <p>
-                            Breaking complex problems into practical
-                            and manageable solutions.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="professional-skill">
-
-                    <i class='bx bx-group'></i>
-
-                    <div>
-                        <h4>Teamwork</h4>
-
-                        <p>
-                            Collaborating effectively with developers,
-                            designers, and other stakeholders.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="professional-skill">
-
-                    <i class='bx bx-conversation'></i>
-
-                    <div>
-                        <h4>Communication</h4>
-
-                        <p>
-                            Clearly communicating ideas, technical
-                            decisions, and project requirements.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="professional-skill">
-
-                    <i class='bx bx-refresh'></i>
-
-                    <div>
-                        <h4>Continuous Learning</h4>
-
-                        <p>
-                            Continuously learning new technologies and
-                            improving development practices.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="professional-skill">
-
-                    <i class='bx bx-time-five'></i>
-
-                    <div>
-                        <h4>Time Management</h4>
-
-                        <p>
-                            Organizing tasks and priorities to deliver
-                            work efficiently and consistently.
-                        </p>
-                    </div>
-
-                </div>
-
-
-                <div class="professional-skill">
-
-                    <i class='bx bx-target-lock'></i>
-
-                    <div>
-                        <h4>Attention to Detail</h4>
-
-                        <p>
-                            Paying attention to functionality, usability,
-                            quality, and maintainability.
-                        </p>
-                    </div>
-
-                </div>
-
+                <p>
+                  Collaborating effectively with developers, designers, and
+                  other stakeholders.
+                </p>
+              </div>
             </div>
 
+            <div class="professional-skill">
+              <i class="bx bx-conversation"></i>
+
+              <div>
+                <h4>Communication</h4>
+
+                <p>
+                  Clearly communicating ideas, technical decisions, and project
+                  requirements.
+                </p>
+              </div>
+            </div>
+
+            <div class="professional-skill">
+              <i class="bx bx-refresh"></i>
+
+              <div>
+                <h4>Continuous Learning</h4>
+
+                <p>
+                  Continuously learning new technologies and improving
+                  development practices.
+                </p>
+              </div>
+            </div>
+
+            <div class="professional-skill">
+              <i class="bx bx-time-five"></i>
+
+              <div>
+                <h4>Time Management</h4>
+
+                <p>
+                  Organizing tasks and priorities to deliver work efficiently
+                  and consistently.
+                </p>
+              </div>
+            </div>
+
+            <div class="professional-skill">
+              <i class="bx bx-target-lock"></i>
+
+              <div>
+                <h4>Attention to Detail</h4>
+
+                <p>
+                  Paying attention to functionality, usability, quality, and
+                  maintainability.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-
-<!-- Projects Section -->
-<section class="projects" id="projects">
-    <div class="section-header">
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+      <div class="section-header">
         <p class="section-label">SELECTED WORK</p>
         <h2 class="heading">Projects That <span>Solve Problems</span></h2>
         <p class="section-description">
-            A selection of software products spanning full-stack development,
-            education technology, business operations, and customer-facing applications.
+          A selection of software products spanning full-stack development,
+          education technology, business operations, and customer-facing
+          applications.
         </p>
-    </div>
+      </div>
 
-    <div class="projects-grid">
-
+      <div class="projects-grid">
         <!-- 1. Excellent Hire -->
         <article class="project-card">
-            <div class="project-image card-1">
-                <div class="project-overlay">
-                    <span>FULL-STACK · TALENT TECHNOLOGY</span>
-                </div>
+          <div class="project-image card-1">
+            <div class="project-overlay">
+              <span>FULL-STACK · TALENT TECHNOLOGY</span>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Recruitment & Staffing</p>
+            <h3 class="title">Excellent Hire</h3>
+
+            <p>
+              A talent-matching platform designed to connect businesses with
+              skilled professionals. The product focuses on making talent
+              discovery, recruitment, and application workflows more accessible
+              through a responsive web experience.
+            </p>
+
+            <div class="project-tech">
+              <span>Node.js</span>
+              <span>Express.js</span>
+              <span>PostgreSQL</span>
+              <span>JavaScript</span>
             </div>
 
-            <div class="project-content">
-                <p class="project-category">Recruitment & Staffing</p>
-                <h3 class="title">Excellent Hire</h3>
+            <div class="project-links">
+              <a
+                href="https://xcelenthire.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Excellent Hire live demo"
+              >
+                Live Demo
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+              </a>
 
-                <p>
-                    A talent-matching platform designed to connect businesses
-                    with skilled professionals. The product focuses on making
-                    talent discovery, recruitment, and application workflows
-                    more accessible through a responsive web experience.
-                </p>
+              <a
+                href="https://github.com/Billionaire-Developer/XcelentHire"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Excellent Hire source code on GitHub"
+              >
+                Source Code
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
 
-                <div class="project-tech">
-                    <span>Node.js</span>
-                    <span>Express.js</span>
-                    <span>PostgreSQL</span>
-                    <span>JavaScript</span>
-                </div>
-
-                
-<div class="project-links">
-    <a href="https://xcelenthire.vercel.app/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="View Excellent Hire live demo">
-        Live Demo
-        <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
-    </a>
-
-    <a href="https://github.com/Billionaire-Developer/XcelentHire"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="View Excellent Hire source code on GitHub">
-        Source Code
-        <i class="bx bxl-github" aria-hidden="true"></i>
-    </a>
-
-    <a href="#excellent-hire-case-study"
-       class="case-study-link"
-       aria-label="Read the Excellent Hire engineering case study">
-        Read Case Study
-        <i class="bx bx-book-open" aria-hidden="true"></i>
-    </a>
-</div>
-
+              <a
+                href="#excellent-hire-case-study"
+                class="case-study-link"
+                aria-label="Read the Excellent Hire engineering case study"
+              >
+                Read Case Study
+                <i class="bx bx-book-open" aria-hidden="true"></i>
+              </a>
             </div>
+          </div>
         </article>
-
 
         <!-- 2. Meridian Web Academy -->
         <article class="project-card">
-            <div class="project-image card-2">
-                <div class="project-overlay">
-                    <span>EDTECH · LEARNING EXPERIENCE</span>
-                </div>
+          <div class="project-image card-2">
+            <div class="project-overlay">
+              <span>EDTECH · LEARNING EXPERIENCE</span>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Education Technology</p>
+            <h3 class="title">Meridian Web Academy</h3>
+
+            <p>
+              An educational platform focused on practical technology learning.
+              It presents web development training and learning resources in an
+              accessible format, with a focus on helping learners build useful
+              digital skills.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive UI</span>
             </div>
 
-            <div class="project-content">
-                <p class="project-category">Education Technology</p>
-                <h3 class="title">Meridian Web Academy</h3>
+            <div class="project-links">
+              <a
+                href="https://meridian-web-academy.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Meridian Web Academy live demo"
+              >
+                Live Demo
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+              </a>
 
-                <p>
-                    An educational platform focused on practical technology
-                    learning. It presents web development training and learning
-                    resources in an accessible format, with a focus on helping
-                    learners build useful digital skills.
-                </p>
+              <a
+                href="https://github.com/Billionaire-Developer/Meridian-Web-Academy"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Meridian Web Academy source code on GitHub"
+              >
+                Source Code
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
+              
+<a
+    href="#meridian-case-study"
+    class="case-study-link"
+    aria-label="Read the Meridian Web Academy case study"
+>
+    Read Case Study
+    <i class="bx bx-book-open" aria-hidden="true"></i>
+</a>
 
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsive UI</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://meridian-web-academy.vercel.app/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View Meridian Web Academy live demo">
-                        Live Demo
-                        <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="https://github.com/Billionaire-Developer/Meridian-Web-Academy"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View Meridian Web Academy source code on GitHub">
-                        Source Code
-                        <i class="bx bxl-github" aria-hidden="true"></i>
-                    </a>
-                </div>
             </div>
+          </div>
         </article>
-
 
         <!-- 3. DRYME Laundry Management -->
         <article class="project-card">
-            <div class="project-image card-3">
-                <div class="project-overlay">
-                    <span>CUSTOMER-FACING WEB APPLICATION</span>
-                </div>
+          <div class="project-image card-3">
+            <div class="project-overlay">
+              <span>CUSTOMER-FACING WEB APPLICATION</span>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Service Management</p>
+            <h3 class="title">DRYME Laundry</h3>
+
+            <p>
+              A laundry service application designed to simplify how customers
+              explore services and manage laundry requests. The interface
+              emphasizes straightforward navigation, service discovery, and a
+              responsive experience across devices.
+            </p>
+
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
             </div>
 
-            <div class="project-content">
-                <p class="project-category">Service Management</p>
-                <h3 class="title">DRYME Laundry</h3>
+            <div class="project-links">
+              <a
+                href="https://billionaire-developer.github.io/DRYME/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View DRYME Laundry live demo"
+              >
+                Live Demo
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+              </a>
 
-                <p>
-                    A laundry service application designed to simplify how
-                    customers explore services and manage laundry requests.
-                    The interface emphasizes straightforward navigation,
-                    service discovery, and a responsive experience across devices.
-                </p>
-
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsive Design</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://billionaire-developer.github.io/DRYME/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View DRYME Laundry live demo">
-                        Live Demo
-                        <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="https://github.com/Billionaire-Developer/DRYME"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View DRYME Laundry source code on GitHub">
-                        Source Code
-                        <i class="bx bxl-github" aria-hidden="true"></i>
-                    </a>
-                </div>
+              <a
+                href="https://github.com/Billionaire-Developer/DRYME"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View DRYME Laundry source code on GitHub"
+              >
+                Source Code
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
             </div>
+          </div>
         </article>
-
 
         <!-- 4. ACME Business Management -->
         <article class="project-card">
-            <div class="project-image card-4">
-                <div class="project-overlay">
-                    <span>BUSINESS MANAGEMENT · DASHBOARD</span>
-                </div>
+          <div class="project-image card-4">
+            <div class="project-overlay">
+              <span>BUSINESS MANAGEMENT · DASHBOARD</span>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Business Software</p>
+            <h3 class="title">ACME Business Dashboard</h3>
+
+            <p>
+              A business management application built around customer records,
+              invoice workflows, and data-driven administration. The project
+              brings key business operations into a unified interface using a
+              modern React-based application stack.
+            </p>
+
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>PostgreSQL</span>
             </div>
 
-            <div class="project-content">
-                <p class="project-category">Business Software</p>
-                <h3 class="title">ACME Business Dashboard</h3>
-
-                <p>
-                    A business management application built around customer
-                    records, invoice workflows, and data-driven administration.
-                    The project brings key business operations into a unified
-                    interface using a modern React-based application stack.
-                </p>
-
-                <div class="project-tech">
-                    <span>Next.js</span>
-                    <span>React</span>
-                    <span>TypeScript</span>
-                    <span>PostgreSQL</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://github.com/Billionaire-Developer/ACME"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View ACME Business Dashboard source code on GitHub">
-                        Source Code
-                        <i class="bx bxl-github" aria-hidden="true"></i>
-                    </a>
-                </div>
+            <div class="project-links">
+              <a
+                href="https://github.com/Billionaire-Developer/ACME"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View ACME Business Dashboard source code on GitHub"
+              >
+                Source Code
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
             </div>
+          </div>
         </article>
-
 
         <!-- 5. GridSentinel Ops -->
         <article class="project-card">
-            <div class="project-image card-5">
-                <div class="project-overlay">
-                    <span>OPERATIONS · DATA VISUALIZATION</span>
-                </div>
+          <div class="project-image card-5">
+            <div class="project-overlay">
+              <span>OPERATIONS · DATA VISUALIZATION</span>
+            </div>
+          </div>
+
+          <div class="project-content">
+            <p class="project-category">Operational Intelligence</p>
+            <h3 class="title">GridSentinel Ops</h3>
+
+            <p>
+              An operations dashboard designed to organize site and asset
+              information, incident records, work orders, and operational
+              reporting. Data visualization and CSV import/export features
+              support analysis and structured workflows. The current
+              implementation uses imported data rather than live telemetry.
+            </p>
+
+            <div class="project-tech">
+              <span>Next.js</span>
+              <span>React</span>
+              <span>JavaScript</span>
+              <span>Recharts</span>
+              <span>Lucide React</span>
             </div>
 
-            <div class="project-content">
-                <p class="project-category">Operational Intelligence</p>
-                <h3 class="title">GridSentinel Ops</h3>
+            <div class="project-links">
+              <a
+                href="https://gridsentinel-ops.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View GridSentinel Ops live demo"
+              >
+                Live Demo
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+              </a>
 
-                <p>
-                    An operations dashboard designed to organize site and asset
-                    information, incident records, work orders, and operational
-                    reporting. Data visualization and CSV import/export features
-                    support analysis and structured workflows. The current
-                    implementation uses imported data rather than live telemetry.
-                </p>
+              <a
+                href="https://github.com/Billionaire-Developer/Gridsentinel-ops"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View GridSentinel Ops source code on GitHub"
+              >
+                Source Code
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
 
-                <div class="project-tech">
-                    <span>Next.js</span>
-                    <span>React</span>
-                    <span>JavaScript</span>
-                    <span>Recharts</span>
-                    <span>Lucide React</span>
-                </div>
-
-                
-<div class="project-links">
-    <a href="https://gridsentinel-ops.vercel.app/"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="View GridSentinel Ops live demo">
-        Live Demo
-        <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
-    </a>
-
-    <a href="https://github.com/Billionaire-Developer/Gridsentinel-ops"
-       target="_blank"
-       rel="noopener noreferrer"
-       aria-label="View GridSentinel Ops source code on GitHub">
-        Source Code
-        <i class="bx bxl-github" aria-hidden="true"></i>
-    </a>
-
-    <a href="#gridsentinel-case-study"
-       class="case-study-link"
-       aria-label="Read the GridSentinel Ops engineering case study">
-        Read Case Study
-        <i class="bx bx-book-open" aria-hidden="true"></i>
-    </a>
-</div>
-
+              <a
+                href="#gridsentinel-case-study"
+                class="case-study-link"
+                aria-label="Read the GridSentinel Ops engineering case study"
+              >
+                Read Case Study
+                <i class="bx bx-book-open" aria-hidden="true"></i>
+              </a>
             </div>
+          </div>
         </article>
-
 
         <!-- 6. Adire Laundry -->
         <article class="project-card">
-            <div class="project-image card-6">
-                <div class="project-overlay">
-                    <span>WEB APPLICATION · CUSTOMER EXPERIENCE</span>
-                </div>
+          <div class="project-image card-6">
+            <div class="project-overlay">
+              <span>WEB APPLICATION · CUSTOMER EXPERIENCE</span>
             </div>
+          </div>
 
-            <div class="project-content">
-                <p class="project-category">Service Business</p>
-                <h3 class="title">Adire Laundry</h3>
+          <div class="project-content">
+            <p class="project-category">Service Business</p>
+            <h3 class="title">Adire Laundry</h3>
 
-                <p>
-                    A responsive laundry service website designed to make
-                    service discovery and laundry requests easier for customers.
-                    The project focuses on clear presentation, accessible
-                    navigation, and a consistent experience across screen sizes.
-                </p>
-
-                <div class="project-tech">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>Responsive Design</span>
-                </div>
-
-                <div class="project-links">
-                    <a href="https://billionaire-developer.github.io/Jerry-Laundry/"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View Adire Laundry live demo">
-                        Live Demo
-                        <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
-                    </a>
-
-                    <a href="https://github.com/Billionaire-Developer/Jerry-Laundry"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       aria-label="View Adire Laundry source code on GitHub">
-                        Source Code
-                        <i class="bx bxl-github" aria-hidden="true"></i>
-                    </a>
-                </div>
-            </div>
-        </article>
-
-    </div>
-</section>
-
-
-
-<section class="engineering-case-study" id="excellent-hire-case-study">
-    <div class="case-study-container">
-
-        <!-- 01. INTRODUCTION -->
-        <header class="case-study-header">
-            <span class="section-label">ENGINEERING CASE STUDY / 01</span>
-
-            <h2 class="heading">
-                Building <span>Excellent Hire</span>
-            </h2>
-
-            <p class="case-study-intro">
-                Excellent Hire is a staffing platform built to connect
-                businesses with talent across geographical boundaries.
-                This case study explores the product, its application
-                architecture, and the engineering considerations involved
-                in handling candidate applications and supporting services.
+            <p>
+              A responsive laundry service website designed to make service
+              discovery and laundry requests easier for customers. The project
+              focuses on clear presentation, accessible navigation, and a
+              consistent experience across screen sizes.
             </p>
 
-            <div class="case-study-actions">
-                <a
-                    href="https://xcelenthire.vercel.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="case-study-button primary"
-                >
-                    View Live Project ↗
-                </a>
-
-                <a
-                    href="https://github.com/Billionaire-Developer/XcelentHire"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="case-study-button secondary"
-                >
-                    Explore Source Code ↗
-                </a>
+            <div class="project-tech">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Responsive Design</span>
             </div>
+
+            <div class="project-links">
+              <a
+                href="https://billionaire-developer.github.io/Jerry-Laundry/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Adire Laundry live demo"
+              >
+                Live Demo
+                <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://github.com/Billionaire-Developer/Jerry-Laundry"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Adire Laundry source code on GitHub"
+              >
+                Source Code
+                <i class="bx bxl-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="engineering-case-study" id="excellent-hire-case-study">
+      <div class="case-study-container">
+        <!-- 01. INTRODUCTION -->
+        <header class="case-study-header">
+          <span class="section-label">ENGINEERING CASE STUDY / 01</span>
+
+          <h2 class="heading">Building <span>Excellent Hire</span></h2>
+
+          <p class="case-study-intro">
+            Excellent Hire is a staffing platform built to connect businesses
+            with talent across geographical boundaries. This case study explores
+            the product, its application architecture, and the engineering
+            considerations involved in handling candidate applications and
+            supporting services.
+          </p>
+
+          <div class="case-study-actions">
+            <a
+              href="https://xcelenthire.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="case-study-button primary"
+            >
+              View Live Project ↗
+            </a>
+
+            <a
+              href="https://github.com/Billionaire-Developer/XcelentHire"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="case-study-button secondary"
+            >
+              Explore Source Code ↗
+            </a>
+          </div>
         </header>
 
         <!-- 02. PROJECT OVERVIEW -->
         <div class="case-study-overview">
+          <article class="case-study-panel">
+            <span class="case-study-index">01 / CONTEXT</span>
+            <h3>The problem space</h3>
 
-            <article class="case-study-panel">
-                <span class="case-study-index">01 / CONTEXT</span>
-                <h3>The problem space</h3>
+            <p>
+              Connecting businesses with suitable talent across borders involves
+              more than displaying opportunities. A staffing platform also needs
+              a way to collect candidate information and manage application
+              documents through a consistent digital experience.
+            </p>
+          </article>
 
-                <p>
-                    Connecting businesses with suitable talent across
-                    borders involves more than displaying opportunities.
-                    A staffing platform also needs a way to collect
-                    candidate information and manage application documents
-                    through a consistent digital experience.
-                </p>
-            </article>
+          <article class="case-study-panel">
+            <span class="case-study-index">02 / ENGINEERING</span>
+            <h3>Full-stack development</h3>
 
-            <article class="case-study-panel">
-                <span class="case-study-index">02 / ENGINEERING</span>
-                <h3>Full-stack development</h3>
+            <p>
+              The project brings together a web interface, a Node.js and Express
+              application server, persistent application data, file storage, and
+              email integration. The case study focuses on how these components
+              support the product's workflows.
+            </p>
+          </article>
 
-                <p>
-                    The project brings together a web interface,
-                    a Node.js and Express application server, persistent
-                    application data, file storage, and email integration.
-                    The case study focuses on how these components
-                    support the product's workflows.
-                </p>
-            </article>
+          <article class="case-study-panel">
+            <span class="case-study-index">03 / TECHNOLOGY</span>
+            <h3>Technology stack</h3>
 
-            <article class="case-study-panel">
-                <span class="case-study-index">03 / TECHNOLOGY</span>
-                <h3>Technology stack</h3>
+            <div class="case-study-tags">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Express 5</span>
+              <span>PostgreSQL</span>
+              <span>Supabase</span>
+              <span>Supabase Storage</span>
+              <span>Nodemailer</span>
+            </div>
 
-                <div class="case-study-tags">
-                    <span>JavaScript</span>
-                    <span>Node.js</span>
-                    <span>Express 5</span>
-                    <span>PostgreSQL</span>
-                    <span>Supabase</span>
-                    <span>Supabase Storage</span>
-                    <span>Nodemailer</span>
-                </div>
-
-                <p>
-                    These technologies support the application's
-                    server-side logic, data persistence, document
-                    handling, and email-related functionality.
-                </p>
-            </article>
-
+            <p>
+              These technologies support the application's server-side logic,
+              data persistence, document handling, and email-related
+              functionality.
+            </p>
+          </article>
         </div>
 
         <!-- 03. ARCHITECTURE -->
         <section class="case-study-block">
-            <div class="case-study-block-heading">
-                <span class="case-study-index">04 / ARCHITECTURE</span>
-                <h3>How the components work together</h3>
+          <div class="case-study-block-heading">
+            <span class="case-study-index">04 / ARCHITECTURE</span>
+            <h3>How the components work together</h3>
 
-                <p>
-                    At a high level, the browser communicates with
-                    the application server, which coordinates
-                    application processing and the supporting services
-                    used for data, files, and email.
-                </p>
-            </div>
-
-            <div
-                class="architecture-diagram"
-                aria-label="High-level architecture of Excellent Hire"
-            >
-
-                <div class="architecture-node">
-                    <span class="architecture-number">LAYER 01</span>
-                    <h4>Web interface</h4>
-                    <p>Forms and browser interactions</p>
-                </div>
-
-                <div class="architecture-connector"
-                     aria-hidden="true">↓</div>
-
-                <div class="architecture-node highlighted">
-                    <span class="architecture-number">LAYER 02</span>
-                    <h4>Application server</h4>
-                    <p>Node.js and Express</p>
-                    <small>
-                        Handles application requests and coordinates
-                        server-side operations
-                    </small>
-                </div>
-
-                <div class="architecture-connector"
-                     aria-hidden="true">↓</div>
-
-                <div class="architecture-node">
-                    <span class="architecture-number">LAYER 03</span>
-                    <h4>Application data</h4>
-                    <p>PostgreSQL through Supabase</p>
-                    <small>
-                        Stores structured application information
-                    </small>
-                </div>
-
-                <div class="architecture-connector"
-                     aria-hidden="true">↓</div>
-
-                <div class="architecture-node">
-                    <span class="architecture-number">SUPPORTING SERVICES</span>
-                    <h4>Files and email</h4>
-                    <p>Supabase Storage and Nodemailer</p>
-                    <small>
-                        Supports résumé storage and email integration
-                    </small>
-                </div>
-
-            </div>
-
-            <p class="architecture-caption">
-                High-level system overview. The diagram groups the
-                application's main responsibilities; it does not imply
-                that every request passes through every service.
+            <p>
+              At a high level, the browser communicates with the application
+              server, which coordinates application processing and the
+              supporting services used for data, files, and email.
             </p>
+          </div>
+
+          <div
+            class="architecture-diagram"
+            aria-label="High-level architecture of Excellent Hire"
+          >
+            <div class="architecture-node">
+              <span class="architecture-number">LAYER 01</span>
+              <h4>Web interface</h4>
+              <p>Forms and browser interactions</p>
+            </div>
+
+            <div class="architecture-connector" aria-hidden="true">↓</div>
+
+            <div class="architecture-node highlighted">
+              <span class="architecture-number">LAYER 02</span>
+              <h4>Application server</h4>
+              <p>Node.js and Express</p>
+              <small>
+                Handles application requests and coordinates server-side
+                operations
+              </small>
+            </div>
+
+            <div class="architecture-connector" aria-hidden="true">↓</div>
+
+            <div class="architecture-node">
+              <span class="architecture-number">LAYER 03</span>
+              <h4>Application data</h4>
+              <p>PostgreSQL through Supabase</p>
+              <small> Stores structured application information </small>
+            </div>
+
+            <div class="architecture-connector" aria-hidden="true">↓</div>
+
+            <div class="architecture-node">
+              <span class="architecture-number">SUPPORTING SERVICES</span>
+              <h4>Files and email</h4>
+              <p>Supabase Storage and Nodemailer</p>
+              <small> Supports résumé storage and email integration </small>
+            </div>
+          </div>
+
+          <p class="architecture-caption">
+            High-level system overview. The diagram groups the application's
+            main responsibilities; it does not imply that every request passes
+            through every service.
+          </p>
         </section>
 
         <!-- 04. ENGINEERING DECISIONS -->
         <section class="case-study-block">
-            <div class="case-study-block-heading">
-                <span class="case-study-index">05 / ENGINEERING DECISIONS</span>
-                <h3>Separating application records from uploaded files</h3>
+          <div class="case-study-block-heading">
+            <span class="case-study-index">05 / ENGINEERING DECISIONS</span>
+            <h3>Separating application records from uploaded files</h3>
+
+            <p>
+              Candidate information and résumé documents serve different
+              purposes. Separating structured data from file storage helps keep
+              their responsibilities distinct.
+            </p>
+          </div>
+
+          <div class="decision-record">
+            <div class="decision-record__header">
+              <span class="section-label"> ENGINEERING DECISION 01 </span>
+
+              <h3>A clear separation of responsibilities</h3>
+
+              <p>
+                Excellent Hire uses PostgreSQL-backed application data and
+                separate storage for uploaded résumé files. This approach keeps
+                structured records distinct from document content.
+              </p>
+            </div>
+
+            <div class="decision-record__grid">
+              <article class="decision-record__item">
+                <span class="decision-record__number">01</span>
+                <h4>The design</h4>
 
                 <p>
-                    Candidate information and résumé documents serve
-                    different purposes. Separating structured data
-                    from file storage helps keep their responsibilities
-                    distinct.
+                  Store candidate and application information as structured
+                  records, while keeping résumé files in dedicated file storage.
                 </p>
+              </article>
+
+              <article class="decision-record__item">
+                <span class="decision-record__number">02</span>
+                <h4>Why it matters</h4>
+
+                <p>
+                  Database records and uploaded documents have different access
+                  and storage needs. Separating them makes each responsibility
+                  easier to reason about and maintain.
+                </p>
+              </article>
+
+              <article class="decision-record__item">
+                <span class="decision-record__number">03</span>
+                <h4>The trade-off</h4>
+
+                <p>
+                  A submission may involve more than one service. The
+                  application must account for partial failures, consistent
+                  records, file access, and appropriate cleanup.
+                </p>
+              </article>
+
+              <article class="decision-record__item">
+                <span class="decision-record__number">04</span>
+                <h4>What I would test</h4>
+
+                <p>
+                  Validate file types and sizes, simulate failed uploads, check
+                  duplicate submissions, verify access permissions, and test how
+                  incomplete submissions are handled.
+                </p>
+              </article>
             </div>
 
-            <div class="decision-record">
-
-                <div class="decision-record__header">
-                    <span class="section-label">
-                        ENGINEERING DECISION 01
-                    </span>
-
-                    <h3>A clear separation of responsibilities</h3>
-
-                    <p>
-                        Excellent Hire uses PostgreSQL-backed application
-                        data and separate storage for uploaded résumé
-                        files. This approach keeps structured records
-                        distinct from document content.
-                    </p>
-                </div>
-
-                <div class="decision-record__grid">
-
-                    <article class="decision-record__item">
-                        <span class="decision-record__number">01</span>
-                        <h4>The design</h4>
-
-                        <p>
-                            Store candidate and application information
-                            as structured records, while keeping résumé
-                            files in dedicated file storage.
-                        </p>
-                    </article>
-
-                    <article class="decision-record__item">
-                        <span class="decision-record__number">02</span>
-                        <h4>Why it matters</h4>
-
-                        <p>
-                            Database records and uploaded documents
-                            have different access and storage needs.
-                            Separating them makes each responsibility
-                            easier to reason about and maintain.
-                        </p>
-                    </article>
-
-                    <article class="decision-record__item">
-                        <span class="decision-record__number">03</span>
-                        <h4>The trade-off</h4>
-
-                        <p>
-                            A submission may involve more than one
-                            service. The application must account for
-                            partial failures, consistent records,
-                            file access, and appropriate cleanup.
-                        </p>
-                    </article>
-
-                    <article class="decision-record__item">
-                        <span class="decision-record__number">04</span>
-                        <h4>What I would test</h4>
-
-                        <p>
-                            Validate file types and sizes, simulate
-                            failed uploads, check duplicate submissions,
-                            verify access permissions, and test how
-                            incomplete submissions are handled.
-                        </p>
-                    </article>
-
-                </div>
-
-                <p class="decision-record__note">
-                    Engineering lesson: a workflow is not reliable
-                    simply because the happy path works. Failure
-                    handling, data consistency, and access control
-                    also need deliberate attention.
-                </p>
-
-            </div>
+            <p class="decision-record__note">
+              Engineering lesson: a workflow is not reliable simply because the
+              happy path works. Failure handling, data consistency, and access
+              control also need deliberate attention.
+            </p>
+          </div>
         </section>
 
-        
-<!-- Engineering Highlights -->
-<div class="case-study-block engineering-highlights">
-    <div class="case-study-block-header">
-        <p class="section-label">ENGINEERING HIGHLIGHTS</p>
-        <h3>Turning Product Requirements into Engineering Decisions</h3>
-        <p>
-            Building a talent platform involves more than creating interfaces.
-            It requires clear data boundaries, reliable application workflows,
-            and deliberate decisions about how information is stored and handled.
-        </p>
-    </div>
-
-    <div class="engineering-highlights-grid">
-
-        <article class="engineering-highlight">
-            <span class="engineering-highlight-icon" aria-hidden="true">
-                <i class="bx bx-data"></i>
-            </span>
-            <h4>Data Organization</h4>
+        <!-- Engineering Highlights -->
+        <div class="case-study-block engineering-highlights">
+          <div class="case-study-block-header">
+            <p class="section-label">ENGINEERING HIGHLIGHTS</p>
+            <h3>Turning Product Requirements into Engineering Decisions</h3>
             <p>
+              Building a talent platform involves more than creating interfaces.
+              It requires clear data boundaries, reliable application workflows,
+              and deliberate decisions about how information is stored and
+              handled.
+            </p>
+          </div>
+
+          <div class="engineering-highlights-grid">
+            <article class="engineering-highlight">
+              <span class="engineering-highlight-icon" aria-hidden="true">
+                <i class="bx bx-data"></i>
+              </span>
+              <h4>Data Organization</h4>
+              <p>
                 Structure application data around clear entities and
                 relationships, making records easier to manage and maintain.
-            </p>
-            <span class="engineering-highlight-tag">Data modeling</span>
-        </article>
+              </p>
+              <span class="engineering-highlight-tag">Data modeling</span>
+            </article>
 
-        <article class="engineering-highlight">
-            <span class="engineering-highlight-icon" aria-hidden="true">
+            <article class="engineering-highlight">
+              <span class="engineering-highlight-icon" aria-hidden="true">
                 <i class="bx bx-layer"></i>
-            </span>
-            <h4>Backend Separation</h4>
-            <p>
+              </span>
+              <h4>Backend Separation</h4>
+              <p>
                 Keep request handling, application rules, and database
-                operations organized into distinct responsibilities to
-                improve maintainability.
-            </p>
-            <span class="engineering-highlight-tag">Separation of concerns</span>
-        </article>
+                operations organized into distinct responsibilities to improve
+                maintainability.
+              </p>
+              <span class="engineering-highlight-tag"
+                >Separation of concerns</span
+              >
+            </article>
 
-        <article class="engineering-highlight">
-            <span class="engineering-highlight-icon" aria-hidden="true">
+            <article class="engineering-highlight">
+              <span class="engineering-highlight-icon" aria-hidden="true">
                 <i class="bx bx-shield-quarter"></i>
-            </span>
-            <h4>Security Mindset</h4>
-            <p>
-                Treat user-submitted information and uploaded documents as
-                data that require appropriate validation, access controls,
-                and careful handling.
-            </p>
-            <span class="engineering-highlight-tag">Secure design</span>
-        </article>
+              </span>
+              <h4>Security Mindset</h4>
+              <p>
+                Treat user-submitted information and uploaded documents as data
+                that require appropriate validation, access controls, and
+                careful handling.
+              </p>
+              <span class="engineering-highlight-tag">Secure design</span>
+            </article>
 
-        <article class="engineering-highlight">
-            <span class="engineering-highlight-icon" aria-hidden="true">
+            <article class="engineering-highlight">
+              <span class="engineering-highlight-icon" aria-hidden="true">
                 <i class="bx bx-mobile-alt"></i>
-            </span>
-            <h4>Usable Interfaces</h4>
-            <p>
-                Design around understandable navigation and responsive
-                layouts so users can interact with the product across
-                different screen sizes.
-            </p>
-            <span class="engineering-highlight-tag">User experience</span>
-        </article>
+              </span>
+              <h4>Usable Interfaces</h4>
+              <p>
+                Design around understandable navigation and responsive layouts
+                so users can interact with the product across different screen
+                sizes.
+              </p>
+              <span class="engineering-highlight-tag">User experience</span>
+            </article>
+          </div>
 
-    </div>
+          <p class="engineering-highlights-note">
+            These highlights describe the engineering principles guiding the
+            project. Specific implementation details should reflect the features
+            verified in the codebase.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <p class="engineering-highlights-note">
-        These highlights describe the engineering principles guiding the
-        project. Specific implementation details should reflect the
-        features verified in the codebase.
-    </p>
-</div>
-
-
-        <!-- 05. PRODUCT EVIDENCE -->
-        <section class="case-study-block">
-            <div class="case-study-block-heading">
-                <span class="case-study-index">06 / PRODUCT EVIDENCE</span>
-                <h3>The product in practice</h3>
-
-                <p>
-                    The live application and source code provide
-                    complementary views of the project: one shows
-                    the user experience, while the other exposes
-                    the implementation.
-                </p>
-            </div>
-
-            <div class="case-study-screenshots">
-                <figure class="case-study-screenshot">
-                    <img
-                        src="/Images/xcelentHire.png"
-                        alt="Screenshot of the Excellent Hire staffing platform"
-                        loading="lazy"
-                    >
-
-                    <figcaption>
-                        <strong>Excellent Hire interface</strong>
-                        <span>
-                            A view of the staffing platform's
-                            user-facing experience.
-                        </span>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- 06. REFLECTION -->
-        <section class="case-study-next-steps">
-            <span class="case-study-index">07 / NEXT STEPS</span>
-            <h3>Improving reliability and maintainability</h3>
-
-            <p>
-                Further engineering work should focus on validating
-                inputs, testing critical application workflows,
-                strengthening file-access controls, and improving
-                error handling across database and storage operations.
-            </p>
-
-            <p>
-                I would also add automated tests for important
-                submission scenarios and improve operational logging
-                so failures can be diagnosed more easily.
-                These are improvement priorities, not claims that
-                every item is already implemented.
-            </p>
-        </section>
-
-    </div>
-</section>
-
-
-<!-- GridSentinel Ops Engineering Case Study -->
-<section class="engineering-case-study" id="gridsentinel-case-study">
-    <div class="case-study-header">
+    <!-- GridSentinel Ops Engineering Case Study -->
+    <section class="engineering-case-study" id="gridsentinel-case-study">
+      <div class="case-study-header">
         <p class="section-label">ENGINEERING CASE STUDY</p>
         <h2 class="heading">GridSentinel <span>Ops</span></h2>
         <p class="section-description">
-            An operational dashboard for organizing infrastructure-related
-            records, exploring structured data, and turning operational
-            information into visual summaries.
+          An operational dashboard for organizing infrastructure-related
+          records, exploring structured data, and turning operational
+          information into visual summaries.
         </p>
 
         <div class="case-study-actions">
-            <a class="case-study-button"
-               href="https://gridsentinel-ops.vercel.app/"
-               target="_blank"
-               rel="noopener noreferrer">
+          <a
+            class="case-study-button"
+            href="https://gridsentinel-ops.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Live Demo
+            <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
+          </a>
+
+          <a
+            class="case-study-button"
+            href="https://github.com/Billionaire-Developer/Gridsentinel-ops"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Source Code
+            <i class="bx bxl-github" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Project Overview -->
+      <div class="case-study-overview">
+        <article class="case-study-panel">
+          <p class="section-label">THE PROBLEM</p>
+          <h3>Making Operational Information Easier to Explore</h3>
+          <p>
+            Operational work involves multiple types of information, including
+            sites, assets, incidents, and work orders. GridSentinel Ops brings
+            these record types into a dashboard where users can review
+            structured information and explore visual summaries.
+          </p>
+        </article>
+
+        <article class="case-study-panel">
+          <p class="section-label">THE APPROACH</p>
+          <h3>A Data-Driven Dashboard</h3>
+          <p>
+            The application uses local JSON and sample data as its starting
+            point. CSV import and export support data exchange, browser storage
+            supports persistence, and charts help present operational
+            information visually.
+          </p>
+        </article>
+
+        <article class="case-study-panel">
+          <p class="section-label">TECHNOLOGY</p>
+          <h3>Tools and Libraries</h3>
+          <div class="project-tech">
+            <span>Next.js</span>
+            <span>React</span>
+            <span>JavaScript</span>
+            <span>Recharts</span>
+            <span>Lucide React</span>
+            <span>Browser Storage</span>
+            <span>CSV</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Core Workflows -->
+      <div class="case-study-block">
+        <p class="section-label">CORE WORKFLOWS</p>
+        <h3 class="heading">From Operational Records to Visual Summaries</h3>
+        <p class="section-description">
+          The project brings several related operational data types together in
+          one interface.
+        </p>
+
+        <div class="engineering-decisions">
+          <article class="decision-card">
+            <h4>Site Management</h4>
+            <p>
+              Organize site-related information so operational records can be
+              understood in their broader context.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <h4>Asset Management</h4>
+            <p>
+              Present asset information as a dedicated part of the operational
+              data model.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <h4>Incident Records</h4>
+            <p>
+              Bring incident information into the dashboard for structured
+              review alongside other operational records.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <h4>Work Orders</h4>
+            <p>
+              Include work-order records as another part of the operational
+              workflow.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Data Workflow -->
+      <div class="case-study-block">
+        <p class="section-label">DATA WORKFLOW</p>
+        <h3 class="heading">A Practical Data Handling Approach</h3>
+
+        <div class="architecture-diagram">
+          <div class="architecture-node">
+            <span class="architecture-node-label">INPUT</span>
+            <h4>JSON / Sample Data</h4>
+            <p>Initial operational records</p>
+          </div>
+
+          <div class="architecture-connector" aria-hidden="true">
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+
+          <div class="architecture-node">
+            <span class="architecture-node-label">APPLICATION</span>
+            <h4>GridSentinel Ops</h4>
+            <p>Record views and chart-based summaries</p>
+          </div>
+
+          <div class="architecture-connector" aria-hidden="true">
+            <i class="bx bx-right-arrow-alt"></i>
+          </div>
+
+          <div class="architecture-node">
+            <span class="architecture-node-label">DATA EXCHANGE</span>
+            <h4>CSV + Browser Storage</h4>
+            <p>Import, export, and persisted browser data</p>
+          </div>
+        </div>
+
+        <p class="case-study-note">
+          This is a high-level representation of the confirmed data workflow,
+          not a full system architecture diagram. The project currently uses
+          imported or sample data rather than live grid telemetry.
+        </p>
+      </div>
+
+      <!-- Engineering Decisions -->
+      <div class="case-study-block">
+        <p class="section-label">ENGINEERING DECISIONS</p>
+        <h3 class="heading">Designing for Clarity and Practical Use</h3>
+
+        <div class="engineering-decisions">
+          <article class="decision-card">
+            <span class="decision-number">01</span>
+            <h4>Structured Operational Records</h4>
+            <p>
+              Separating sites, assets, incidents, and work orders into distinct
+              record types helps the interface represent different operational
+              concerns clearly.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <span class="decision-number">02</span>
+            <h4>CSV Import and Export</h4>
+            <p>
+              Supporting CSV in both directions gives users a way to bring in
+              structured records and take data out for use in compatible tools.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <span class="decision-number">03</span>
+            <h4>Browser-Based Persistence</h4>
+            <p>
+              Browser storage supports persistence without requiring a remote
+              database for the current implementation. This keeps the data layer
+              lightweight, with storage limited to the browser environment.
+            </p>
+          </article>
+
+          <article class="decision-card">
+            <span class="decision-number">04</span>
+            <h4>Visual Reporting</h4>
+            <p>
+              Recharts provides a way to communicate operational information
+              through charts, complementing the underlying records with visual
+              summaries.
+            </p>
+          </article>
+        </div>
+      </div>
+
+      <!-- Current Limitations -->
+      <div class="case-study-next-steps">
+        <p class="section-label">CURRENT SCOPE & NEXT STEPS</p>
+        <h3>Where the Project Can Go Next</h3>
+        <p>
+          GridSentinel Ops currently works with local JSON or sample data, CSV
+          workflows, and browser storage. It does not currently provide live
+          grid telemetry through the implementation described here.
+        </p>
+
+        <ul>
+          <li>
+            Explore a backend and database for shared, centralized records.
+          </li>
+          <li>
+            Consider role-based access and authentication if multiple users are
+            introduced.
+          </li>
+          <li>
+            Validate imported CSV data and provide clear feedback for invalid
+            files.
+          </li>
+          <li>
+            Investigate live data integrations as a future extension, if
+            suitable sources are available.
+          </li>
+        </ul>
+      </div>
+
+      <div class="case-study-next-steps">
+        <p class="section-label">REFLECTION</p>
+        <h3>What This Project Demonstrates</h3>
+        <p>
+          GridSentinel Ops explores how structured operational data, data
+          exchange, browser persistence, and visual summaries can work together
+          in a single application. It also provides a foundation for exploring
+          more robust data management and integration approaches in future
+          iterations.
+        </p>
+      </div>
+    </section>
+
+    
+<!-- Meridian Web Academy Case Study -->
+<section class="engineering-case-study" id="meridian-case-study">
+
+    <div class="case-study-header">
+        <p class="section-label">FRONTEND DEVELOPMENT · EDUCATION</p>
+
+        <h2 class="heading">
+            Meridian Web Academy
+            <span class="highlight">Case Study</span>
+        </h2>
+
+        <p class="section-description">
+            A web-based learning platform designed to present technology
+            courses, communicate learning opportunities, and help prospective
+            students explore educational programs. Built with HTML, CSS,
+            and JavaScript, the project focuses on clear content structure,
+            visual presentation, and an accessible browsing experience.
+        </p>
+
+        <div class="case-study-actions">
+            <a
+                class="case-study-button"
+                href="https://meridian-web-academy.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Meridian Web Academy live website"
+            >
                 View Live Demo
                 <i class="bx bx-right-arrow-alt" aria-hidden="true"></i>
             </a>
 
-            <a class="case-study-button"
-               href="https://github.com/Billionaire-Developer/Gridsentinel-ops"
-               target="_blank"
-               rel="noopener noreferrer">
-                View Source Code
+            <a
+                class="case-study-button"
+                href="https://github.com/Billionaire-Developer"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit the developer's GitHub profile"
+            >
+                View GitHub
                 <i class="bx bxl-github" aria-hidden="true"></i>
             </a>
         </div>
@@ -1616,898 +1589,897 @@
 
     <!-- Project Overview -->
     <div class="case-study-overview">
+
         <article class="case-study-panel">
-            <p class="section-label">THE PROBLEM</p>
-            <h3>Making Operational Information Easier to Explore</h3>
+            <span class="case-study-panel-icon">
+                <i class="bx bx-target-lock" aria-hidden="true"></i>
+            </span>
+
+            <h3>Project Goal</h3>
+
             <p>
-                Operational work involves multiple types of information,
-                including sites, assets, incidents, and work orders.
-                GridSentinel Ops brings these record types into a dashboard
-                where users can review structured information and explore
-                visual summaries.
+                Present web development education and training opportunities
+                through a clear, professional website that helps visitors
+                understand the academy and its learning programs.
             </p>
         </article>
 
         <article class="case-study-panel">
-            <p class="section-label">THE APPROACH</p>
-            <h3>A Data-Driven Dashboard</h3>
+            <span class="case-study-panel-icon">
+                <i class="bx bx-code-alt" aria-hidden="true"></i>
+            </span>
+
+            <h3>Technology Stack</h3>
+
             <p>
-                The application uses local JSON and sample data as its
-                starting point. CSV import and export support data exchange,
-                browser storage supports persistence, and charts help present
-                operational information visually.
+                HTML for page structure, CSS for layout and visual styling,
+                and JavaScript for client-side interactions where implemented.
             </p>
         </article>
 
         <article class="case-study-panel">
-            <p class="section-label">TECHNOLOGY</p>
-            <h3>Tools and Libraries</h3>
-            <div class="project-tech">
-                <span>Next.js</span>
-                <span>React</span>
-                <span>JavaScript</span>
-                <span>Recharts</span>
-                <span>Lucide React</span>
-                <span>Browser Storage</span>
-                <span>CSV</span>
-            </div>
+            <span class="case-study-panel-icon">
+                <i class="bx bx-devices" aria-hidden="true"></i>
+            </span>
+
+            <h3>Development Focus</h3>
+
+            <p>
+                Clear information hierarchy, consistent visual presentation,
+                responsive layout considerations, and a straightforward
+                visitor experience.
+            </p>
         </article>
+
     </div>
 
-    <!-- Core Workflows -->
+    <!-- Core Features -->
     <div class="case-study-block">
-        <p class="section-label">CORE WORKFLOWS</p>
-        <h3 class="heading">From Operational Records to Visual Summaries</h3>
-        <p class="section-description">
-            The project brings several related operational data types
-            together in one interface.
-        </p>
 
-        <div class="engineering-decisions">
-            <article class="decision-card">
-                <h4>Site Management</h4>
-                <p>
-                    Organize site-related information so operational records
-                    can be understood in their broader context.
-                </p>
-            </article>
-
-            <article class="decision-card">
-                <h4>Asset Management</h4>
-                <p>
-                    Present asset information as a dedicated part of the
-                    operational data model.
-                </p>
-            </article>
-
-            <article class="decision-card">
-                <h4>Incident Records</h4>
-                <p>
-                    Bring incident information into the dashboard for
-                    structured review alongside other operational records.
-                </p>
-            </article>
-
-            <article class="decision-card">
-                <h4>Work Orders</h4>
-                <p>
-                    Include work-order records as another part of the
-                    operational workflow.
-                </p>
-            </article>
-        </div>
-    </div>
-
-    <!-- Data Workflow -->
-    <div class="case-study-block">
-        <p class="section-label">DATA WORKFLOW</p>
-        <h3 class="heading">A Practical Data Handling Approach</h3>
-
-        <div class="architecture-diagram">
-            <div class="architecture-node">
-                <span class="architecture-node-label">INPUT</span>
-                <h4>JSON / Sample Data</h4>
-                <p>Initial operational records</p>
-            </div>
-
-            <div class="architecture-connector" aria-hidden="true">
-                <i class="bx bx-right-arrow-alt"></i>
-            </div>
-
-            <div class="architecture-node">
-                <span class="architecture-node-label">APPLICATION</span>
-                <h4>GridSentinel Ops</h4>
-                <p>Record views and chart-based summaries</p>
-            </div>
-
-            <div class="architecture-connector" aria-hidden="true">
-                <i class="bx bx-right-arrow-alt"></i>
-            </div>
-
-            <div class="architecture-node">
-                <span class="architecture-node-label">DATA EXCHANGE</span>
-                <h4>CSV + Browser Storage</h4>
-                <p>Import, export, and persisted browser data</p>
-            </div>
+        <div class="case-study-block-heading">
+            <p class="section-label">FEATURES & EXPERIENCE</p>
+            <h3 class="case-study-subheading">Designed Around the Learner</h3>
+            <p class="case-study-block-description">
+                The website's content is organized to introduce the academy,
+                explain its educational offerings, and guide visitors toward
+                the information they need.
+            </p>
         </div>
 
-        <p class="case-study-note">
-            This is a high-level representation of the confirmed data
-            workflow, not a full system architecture diagram. The project
-            currently uses imported or sample data rather than live grid
-            telemetry.
-        </p>
-    </div>
-
-    <!-- Engineering Decisions -->
-    <div class="case-study-block">
-        <p class="section-label">ENGINEERING DECISIONS</p>
-        <h3 class="heading">Designing for Clarity and Practical Use</h3>
-
         <div class="engineering-decisions">
+
             <article class="decision-card">
                 <span class="decision-number">01</span>
-                <h4>Structured Operational Records</h4>
+
+                <h4>Educational Content</h4>
+
                 <p>
-                    Separating sites, assets, incidents, and work orders
-                    into distinct record types helps the interface represent
-                    different operational concerns clearly.
+                    Organizes academy information and training opportunities
+                    so prospective learners can understand the available
+                    educational paths.
                 </p>
+
+                <span class="decision-tag">Content Structure</span>
             </article>
 
             <article class="decision-card">
                 <span class="decision-number">02</span>
-                <h4>CSV Import and Export</h4>
+
+                <h4>Visual Hierarchy</h4>
+
                 <p>
-                    Supporting CSV in both directions gives users a way to
-                    bring in structured records and take data out for use
-                    in compatible tools.
+                    Uses headings, spacing, typography, and content groupings
+                    to make important information easier to scan and understand.
                 </p>
+
+                <span class="decision-tag">UI Design</span>
             </article>
 
             <article class="decision-card">
                 <span class="decision-number">03</span>
-                <h4>Browser-Based Persistence</h4>
+
+                <h4>Responsive Layout</h4>
+
                 <p>
-                    Browser storage supports persistence without requiring
-                    a remote database for the current implementation.
-                    This keeps the data layer lightweight, with storage
-                    limited to the browser environment.
+                    Applies frontend layout and styling techniques to support
+                    a usable presentation across different screen sizes,
+                    where implemented.
                 </p>
+
+                <span class="decision-tag">CSS</span>
             </article>
 
             <article class="decision-card">
                 <span class="decision-number">04</span>
-                <h4>Visual Reporting</h4>
+
+                <h4>Visitor Interaction</h4>
+
                 <p>
-                    Recharts provides a way to communicate operational
-                    information through charts, complementing the
-                    underlying records with visual summaries.
+                    Uses standard web navigation and any implemented
+                    client-side JavaScript interactions to help visitors
+                    explore the site.
                 </p>
+
+                <span class="decision-tag">JavaScript</span>
             </article>
+
         </div>
     </div>
 
-    <!-- Current Limitations -->
-    <div class="case-study-next-steps">
-        <p class="section-label">CURRENT SCOPE & NEXT STEPS</p>
-        <h3>Where the Project Can Go Next</h3>
-        <p>
-            GridSentinel Ops currently works with local JSON or sample data,
-            CSV workflows, and browser storage. It does not currently provide
-            live grid telemetry through the implementation described here.
-        </p>
+    <!-- Technical Implementation -->
+    <div class="case-study-block">
 
-        <ul>
-            <li>Explore a backend and database for shared, centralized records.</li>
-            <li>Consider role-based access and authentication if multiple users are introduced.</li>
-            <li>Validate imported CSV data and provide clear feedback for invalid files.</li>
-            <li>Investigate live data integrations as a future extension, if suitable sources are available.</li>
-        </ul>
+        <div class="case-study-block-heading">
+            <p class="section-label">ENGINEERING HIGHLIGHTS</p>
+            <h3 class="case-study-subheading">Building with Core Web Technologies</h3>
+        </div>
+
+        <div class="engineering-decisions">
+
+            <article class="decision-card">
+                <h4>Semantic HTML</h4>
+
+                <p>
+                    Structures page content with meaningful elements to
+                    support readability, maintainability, and a logical
+                    document hierarchy.
+                </p>
+            </article>
+
+            <article class="decision-card">
+                <h4>Organized CSS</h4>
+
+                <p>
+                    Handles the website's visual presentation, including
+                    spacing, typography, colors, and layout rules.
+                </p>
+            </article>
+
+            <article class="decision-card">
+                <h4>Client-Side JavaScript</h4>
+
+                <p>
+                    Provides a way to implement browser-side behavior
+                    without introducing a framework or claiming server-side
+                    functionality.
+                </p>
+            </article>
+
+            <article class="decision-card">
+                <h4>Maintainable Frontend</h4>
+
+                <p>
+                    Keeps the implementation grounded in standard web
+                    technologies, making the codebase approachable for
+                    future improvements.
+                </p>
+            </article>
+
+        </div>
     </div>
 
-    <div class="case-study-next-steps">
-        <p class="section-label">REFLECTION</p>
-        <h3>What This Project Demonstrates</h3>
-        <p>
-            GridSentinel Ops explores how structured operational data,
-            data exchange, browser persistence, and visual summaries can
-            work together in a single application. It also provides a
-            foundation for exploring more robust data management and
-            integration approaches in future iterations.
-        </p>
+    <!-- Scope and Future Improvements -->
+    <div class="case-study-block">
+
+        <div class="case-study-block-heading">
+            <p class="section-label">SCOPE & NEXT STEPS</p>
+            <h3 class="case-study-subheading">What Comes Next?</h3>
+        </div>
+
+        <div class="case-study-overview">
+
+            <article class="case-study-panel">
+                <h4>Current Scope</h4>
+
+                <p>
+                    This case study documents the HTML, CSS, and JavaScript
+                    frontend. Features that require a server, database,
+                    or third-party integration are not presented as completed
+                    unless they have actually been implemented.
+                </p>
+            </article>
+
+            <article class="case-study-panel">
+                <h4>Potential Improvements</h4>
+
+                <p>
+                    Depending on the project's goals, future work could
+                    include a connected enquiry form, student registration,
+                    course enrollment, payment integration, and persistent
+                    student records.
+                </p>
+            </article>
+
+            <article class="case-study-panel">
+                <h4>Key Takeaway</h4>
+
+                <p>
+                    The project provides an opportunity to demonstrate
+                    foundational frontend development: structuring content,
+                    styling interfaces, and creating a clear online presence
+                    for an educational initiative.
+                </p>
+            </article>
+
+        </div>
     </div>
+
 </section>
-
 
 
 
 <!-- =====================================================
-     EXPERIENCE / JOURNEY SECTION
+     EDUCATION & PROFESSIONAL JOURNEY
 ===================================================== -->
 
 <section class="experience" id="experience">
-
-    <div class="experience-container">
-
-        <!-- =========================
-             SECTION HEADER
-        ========================== -->
-
-        <div class="experience-header">
-
-            <p class="experience-label">
-                MY JOURNEY
-            </p>
-
-            <h2 class="experience-heading">
-                Education & <span>Experience</span>
-            </h2>
-
-            <p class="experience-description">
-                My academic background and professional experience have
-                shaped the skills and perspective I bring to software
-                development and digital problem-solving.
-            </p>
-
-        </div>
-
-
-        <!-- =========================
-             JOURNEY GRID
-        ========================== -->
-
-        <div class="experience-grid">
-
-
-            <!-- =================================================
-                 EDUCATION
-            ================================================== -->
-
-            <div class="experience-column">
-
-                <div class="experience-column-header">
-
-                    <div class="experience-header-icon">
-                        <i class='bx bxs-graduation'></i>
-                    </div>
-
-                    <div>
-                        <p class="experience-column-label">
-                            EDUCATION
-                        </p>
-
-                        <h3>
-                            Academic Background
-                        </h3>
-                    </div>
-
-                </div>
-
-
-                <!-- Education Items -->
-
-                <div class="experience-list">
-
-
-                    <!-- Education 1 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2024 - Present
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            Bachelor's Degree in Software Development
-                        </h4>
-
-                        <p class="experience-institution">
-                            Brigham Young University–Idaho
-                        </p>
-
-                        <p class="experience-card-description">
-                            Developing strong skills in software development,
-                            programming, problem-solving, databases, web
-                            technologies, and real-world project development.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Education 2 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2025
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            Associate Degree in Web & Computer Programming
-                        </h4>
-
-                        <p class="experience-institution">
-                            Brigham Young University–Idaho
-                        </p>
-
-                        <p class="experience-card-description">
-                            Built a strong foundation in web development,
-                            programming fundamentals, software development,
-                            and computer science principles.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Education 3 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2023 - 2024
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            National Diploma in Computer Science
-                        </h4>
-
-                        <p class="experience-institution">
-                            Yaba College of Technology
-                        </p>
-
-                        <p class="experience-card-description">
-                            Gained foundational knowledge in computer science,
-                            programming, information technology, and
-                            computer systems.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Education 4 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2018
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            Computer & Digital Skills Certificate
-                        </h4>
-
-                        <p class="experience-institution">
-                            Aiyedun Computer Institute
-                        </p>
-
-                        <p class="experience-card-description">
-                            Developed practical knowledge of computer
-                            operations, Microsoft Office tools, and
-                            digital design applications.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- =================================================
-                 PROFESSIONAL EXPERIENCE
-            ================================================== -->
-
-            <div class="experience-column">
-
-                <div class="experience-column-header">
-
-                    <div class="experience-header-icon">
-                        <i class='bx bx-briefcase-alt-2'></i>
-                    </div>
-
-                    <div>
-                        <p class="experience-column-label">
-                            EXPERIENCE
-                        </p>
-
-                        <h3>
-                            Professional Experience
-                        </h3>
-                    </div>
-
-                </div>
-
-
-                <!-- Experience Items -->
-
-                <div class="experience-list">
-
-
-                    <!-- Experience 1 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2023
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            Web Development
-                        </h4>
-
-                        <p class="experience-institution">
-                            Google
-                        </p>
-
-                        <p class="experience-card-description">
-                            Worked on web development tasks including user
-                            interface features, reusable code, webpage
-                            structure, and responsive design.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Experience 2 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2023
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            UI/UX Designer
-                        </h4>
-
-                        <p class="experience-institution">
-                            Hagital
-                        </p>
-
-                        <p class="experience-card-description">
-                            Designed user-friendly interfaces for digital
-                            products across areas such as Web3 and fintech,
-                            while collaborating with developers to bring
-                            designs to life.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Experience 3 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2024
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            Technical Support
-                        </h4>
-
-                        <p class="experience-institution">
-                            Top Universe International
-                        </p>
-
-                        <p class="experience-card-description">
-                            Provided technical support, guided users through
-                            troubleshooting processes, monitored network
-                            systems, and resolved reported technical issues.
-                        </p>
-
-                    </article>
-
-
-                    <!-- Experience 4 -->
-
-                    <article class="experience-card">
-
-                        <div class="experience-card-top">
-
-                            <span class="experience-date">
-                                <i class='bx bxs-calendar'></i>
-                                2024
-                            </span>
-
-                        </div>
-
-                        <h4>
-                            Data Entry
-                        </h4>
-
-                        <p class="experience-institution">
-                            Springboard
-                        </p>
-
-                        <p class="experience-card-description">
-                            Verified and entered data accurately, maintained
-                            database records, worked with Microsoft Office
-                            tools, and consistently met review deadlines.
-                        </p>
-
-                    </article>
-
-                </div>
-
-            </div>
-
-        </div>
-
+  <div class="experience-container">
+
+    <!-- SECTION HEADER -->
+    <div class="experience-header">
+      <p class="experience-label">MY JOURNEY</p>
+
+      <h2 class="experience-heading">
+        Education & <span>Experience</span>
+      </h2>
+
+      <p class="experience-description">
+        My academic background, professional experience, and independent
+        software projects have shaped my approach to building practical,
+        user-focused digital solutions.
+      </p>
     </div>
 
+    <!-- JOURNEY GRID -->
+    <div class="experience-grid">
+
+      <!-- ================================================
+           EDUCATION
+      ================================================= -->
+
+      <div class="experience-column">
+
+        <div class="experience-column-header">
+          <div class="experience-header-icon">
+            <i class="bx bxs-graduation" aria-hidden="true"></i>
+          </div>
+
+          <div>
+            <p class="experience-column-label">EDUCATION</p>
+            <h3>Academic Background</h3>
+          </div>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Education 1 -->
+          <article class="experience-card">
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2024 – Present
+              </span>
+            </div>
+
+            <h4>Bachelor's Degree in Software Development</h4>
+
+            <p class="experience-institution">
+              Brigham Young University–Idaho
+            </p>
+
+            <p class="experience-card-description">
+              Developing skills in software development, programming,
+              problem-solving, databases, web technologies, and
+              practical application development.
+            </p>
+          </article>
+
+          <!-- Education 2 -->
+          <article class="experience-card">
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2025
+              </span>
+            </div>
+
+            <h4>Associate Degree in Web & Computer Programming</h4>
+
+            <p class="experience-institution">
+              Brigham Young University–Idaho
+            </p>
+
+            <p class="experience-card-description">
+              Built a foundation in web development, programming
+              fundamentals, software development, and computer
+              science principles.
+            </p>
+          </article>
+
+          <!-- Education 3 -->
+          <article class="experience-card">
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2023 – 2024
+              </span>
+            </div>
+
+            <h4>National Diploma in Computer Science</h4>
+
+            <p class="experience-institution">
+              Yaba College of Technology
+            </p>
+
+            <p class="experience-card-description">
+              Gained foundational knowledge in computer science,
+              programming, information technology, and computer systems.
+            </p>
+          </article>
+
+          <!-- Education 4 -->
+          <article class="experience-card">
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2018
+              </span>
+            </div>
+
+            <h4>Computer & Digital Skills Certificate</h4>
+
+            <p class="experience-institution">
+              Aiyedun Computer Institute
+            </p>
+
+            <p class="experience-card-description">
+              Developed practical knowledge of computer operations,
+              Microsoft Office tools, and digital design applications.
+            </p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ================================================
+           PROFESSIONAL EXPERIENCE
+      ================================================= -->
+
+      <div class="experience-column">
+
+        <div class="experience-column-header">
+          <div class="experience-header-icon">
+            <i class="bx bx-briefcase-alt-2" aria-hidden="true"></i>
+          </div>
+
+          <div>
+            <p class="experience-column-label">EXPERIENCE</p>
+            <h3>Professional Experience</h3>
+          </div>
+        </div>
+
+        <div class="experience-list">
+
+          <!-- Experience 1: Independent Development -->
+          <article class="experience-card experience-featured">
+
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2023 – Present
+              </span>
+
+              <span class="experience-status">
+                Independent
+              </span>
+            </div>
+
+            <h4>Full-Stack Software Developer</h4>
+
+            <p class="experience-institution">
+              Independent Software Development
+            </p>
+
+            <p class="experience-card-description">
+              Design, develop, and deploy web applications across the
+              frontend and backend, working with APIs, databases,
+              application logic, and deployment workflows.
+            </p>
+
+            <ul class="experience-responsibilities">
+              <li>
+                Build responsive interfaces with HTML, CSS, JavaScript,
+                React, and Next.js.
+              </li>
+              <li>
+                Develop backend functionality and REST APIs using
+                Node.js and Express.
+              </li>
+              <li>
+                Integrate databases and implement application workflows,
+                validation, and authentication where required.
+              </li>
+              <li>
+                Use Git and GitHub for version control, and deploy
+                applications using platforms such as Vercel and Render.
+              </li>
+            </ul>
+
+            <div class="experience-projects">
+              <p class="experience-projects-label">
+                FEATURED PROJECTS
+              </p>
+
+              <a
+                href="https://xcelenthire.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-project-link"
+              >
+                <span>Excellent Hire</span>
+                <i class="bx bx-link-external" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://gridsentinel-ops.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-project-link"
+              >
+                <span>GridSentinel Ops</span>
+                <i class="bx bx-link-external" aria-hidden="true"></i>
+              </a>
+
+              <a
+                href="https://meridian-web-academy.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="experience-project-link"
+              >
+                <span>Meridian Web Academy</span>
+                <i class="bx bx-link-external" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="experience-tags">
+              <span>JavaScript</span>
+              <span>React</span>
+              <span>Next.js</span>
+              <span>Node.js</span>
+              <span>Express</span>
+              <span>SQL & NoSQL</span>
+              <span>REST APIs</span>
+              <span>Git</span>
+            </div>
+          </article>
+
+          <!-- Experience 2: Hagital -->
+          <article class="experience-card">
+
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2023
+              </span>
+
+              <span class="experience-status">
+                Employment
+              </span>
+            </div>
+
+            <h4>UI/UX Designer</h4>
+
+            <p class="experience-institution">Hagital</p>
+
+            <p class="experience-card-description">
+              Worked on user interface and user experience design
+              for digital products, including work in Web3 and fintech.
+            </p>
+
+            <ul class="experience-responsibilities">
+              <li>
+                Designed interfaces with attention to usability,
+                visual consistency, and user needs.
+              </li>
+              <li>
+                Collaborated with developers to support the
+                implementation of design concepts.
+              </li>
+            </ul>
+
+            <div class="experience-tags">
+              <span>UI/UX</span>
+              <span>Interface Design</span>
+              <span>Web3</span>
+              <span>Fintech</span>
+            </div>
+          </article>
+
+          <!-- Experience 3: Technical Support -->
+          <article class="experience-card">
+
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2024
+              </span>
+            </div>
+
+            <h4>Technical Support</h4>
+
+            <p class="experience-institution">
+              Top Universe International
+            </p>
+
+            <p class="experience-card-description">
+              Supported technical operations by helping users
+              troubleshoot issues and addressing reported
+              technology-related problems.
+            </p>
+
+            <ul class="experience-responsibilities">
+              <li>
+                Assisted with technical troubleshooting and
+                problem resolution.
+              </li>
+              <li>
+                Supported users and day-to-day technical operations.
+              </li>
+            </ul>
+
+            <div class="experience-tags">
+              <span>Technical Support</span>
+              <span>Troubleshooting</span>
+              <span>Problem-Solving</span>
+            </div>
+          </article>
+
+          <!-- Experience 4: SPRINGBOARD -->
+          <article class="experience-card">
+
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2024
+              </span>
+            </div>
+
+            <h4>Data Entry</h4>
+
+            <p class="experience-institution">SPRINGBOARD</p>
+
+            <p class="experience-card-description">
+              Supported data entry and record management, with
+              emphasis on accurate information handling and
+              organized records.
+            </p>
+
+            <ul class="experience-responsibilities">
+              <li>
+                Entered and reviewed information for accuracy.
+              </li>
+              <li>
+                Maintained records and worked with digital
+                productivity tools.
+              </li>
+            </ul>
+
+            <div class="experience-tags">
+              <span>Data Entry</span>
+              <span>Record Management</span>
+              <span>Accuracy</span>
+            </div>
+          </article>
+
+          <!-- Certificate: Google -->
+          <article class="experience-card experience-certificate">
+
+            <div class="experience-card-top">
+              <span class="experience-date">
+                <i class="bx bxs-calendar" aria-hidden="true"></i>
+                2023
+              </span>
+
+              <span class="experience-status">
+                Certificate
+              </span>
+            </div>
+
+            <h4>Web Development Certificate</h4>
+
+            <p class="experience-institution">
+              Google
+            </p>
+
+            <p class="experience-card-description">
+              Completed web development-related learning and
+              certification. This credential is listed as professional
+              development, not as employment at Google.
+            </p>
+
+            <!-- Replace the title and description above with the
+                 exact certificate name and subject before publishing. -->
+
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<!-- Contact Section -->
-<section class="contact" id="contact">
 
-    <div class="section-header">
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+      <div class="section-header">
         <p class="section-label">GET IN TOUCH</p>
 
-        <h2 class="heading">
-            Let's Build <span>Something.</span>
-        </h2>
+        <h2 class="heading">Let's Build <span>Something.</span></h2>
 
         <p class="section-description">
-            Have a project, business idea, or opportunity in mind?
-            I'd love to hear about it. Send me a message and let's
-            discuss how we can turn your idea into a working solution.
+          Have a project, business idea, or opportunity in mind? I'd love to
+          hear about it. Send me a message and let's discuss how we can turn
+          your idea into a working solution.
         </p>
-    </div>
+      </div>
 
-
-    <div class="contact-container">
-
+      <div class="contact-container">
         <!-- Contact Information -->
         <div class="contact-info">
+          <h3>Let's Talk</h3>
 
-            <h3>Let's Talk</h3>
+          <p>
+            Whether you need a full-stack application, API, business dashboard,
+            or a complete digital product, I'm available to discuss your
+            project.
+          </p>
 
-            <p>
-                Whether you need a full-stack application, API,
-                business dashboard, or a complete digital product,
-                I'm available to discuss your project.
-            </p>
+          <div class="contact-details">
+            <!-- Email -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bx bx-envelope"></i>
+              </div>
 
-
-            <div class="contact-details">
-
-                <!-- Email -->
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class='bx bx-envelope'></i>
-                    </div>
-
-                    <div>
-                        <span>Email</span>
-                        <a href="mailto:lawani_jeremiah@yahoo.com">
-                            lawani_jeremiah@yahoo.com
-                        </a>
-                    </div>
-                </div>
-
-
-                <!-- Phone -->
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class='bx bx-phone'></i>
-                    </div>
-
-                    <div>
-                        <span>Phone</span>
-                        <a href="tel:+2347030866186">
-                            +234 703 086 6186
-                        </a>
-                    </div>
-                </div>
-
-
-                <!-- Location -->
-                <div class="contact-item">
-                    <div class="contact-icon">
-                        <i class='bx bx-map'></i>
-                    </div>
-
-                    <div>
-                        <span>Location</span>
-                        <p>Nigeria</p>
-                    </div>
-                </div>
-
+              <div>
+                <span>Email</span>
+                <a href="mailto:lawani_jeremiah@yahoo.com">
+                  lawani_jeremiah@yahoo.com
+                </a>
+              </div>
             </div>
 
+            <!-- Phone -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bx bx-phone"></i>
+              </div>
 
-            <!-- Social Links -->
-            <div class="contact-socials">
-
-                <a href="https://github.com/Billionaire-Developer"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="GitHub">
-                    <i class='bx bxl-github'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="LinkedIn">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-                <a href="https://twitter.com/BillionaireDeve"
-                   target="_blank"
-                   rel="noopener noreferrer"
-                   aria-label="Twitter">
-                    <i class='bx bxl-twitter'></i>
-                </a>
-
+              <div>
+                <span>Phone</span>
+                <a href="tel:+2347030866186"> +234 703 086 6186 </a>
+              </div>
             </div>
 
+            <!-- Location -->
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="bx bx-map"></i>
+              </div>
+
+              <div>
+                <span>Location</span>
+                <p>Nigeria</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="contact-socials">
+            <a
+              href="https://github.com/Billionaire-Developer"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/jeremiah-lawani-b6a516184/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/BillionaireDeve"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
+          </div>
         </div>
-
 
         <!-- Contact Form -->
         <div class="contact-form">
+          <form id="contact-form" action="#" method="POST">
+            <!-- Name -->
+            <div class="input-box">
+              <div class="input-field">
+                <input
+                  type="text"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                  autocomplete="given-name"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
 
-            <form id="contact-form" action="#" method="POST">
+              <div class="input-field">
+                <input
+                  type="text"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                  autocomplete="family-name"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
+            </div>
 
-                <!-- Name -->
-                <div class="input-box">
+            <!-- Contact Details -->
+            <div class="input-box">
+              <div class="input-field">
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Email Address"
+                  autocomplete="email"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
 
-                    <div class="input-field">
-                        <input
-                            type="text"
-                            id="firstName"
-                            name="firstName"
-                            placeholder="First Name"
-                            autocomplete="given-name"
-                            required
-                        >
-                        <span class="focus"></span>
-                    </div>
+              <div class="input-field">
+                <input
+                  type="tel"
+                  id="number"
+                  name="number"
+                  placeholder="Mobile Number"
+                  autocomplete="tel"
+                />
+                <span class="focus"></span>
+              </div>
+            </div>
 
-                    <div class="input-field">
-                        <input
-                            type="text"
-                            id="lastName"
-                            name="lastName"
-                            placeholder="Last Name"
-                            autocomplete="family-name"
-                            required
-                        >
-                        <span class="focus"></span>
-                    </div>
+            <!-- Subject -->
+            <div class="input-box">
+              <div class="input-field full-width">
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Project Subject"
+                  required
+                />
+                <span class="focus"></span>
+              </div>
+            </div>
 
-                </div>
+            <!-- Message -->
+            <div class="textarea-field">
+              <textarea
+                id="message"
+                name="message"
+                rows="7"
+                placeholder="Tell me about your project..."
+                required
+              ></textarea>
 
+              <span class="focus"></span>
+            </div>
 
-                <!-- Contact Details -->
-                <div class="input-box">
+            <!-- Submit -->
+            <div class="btn-box btns">
+              <button type="submit" class="btn" id="submit-btn">
+                Send Message
+                <i class="bx bx-send"></i>
+              </button>
+            </div>
 
-                    <div class="input-field">
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Email Address"
-                            autocomplete="email"
-                            required
-                        >
-                        <span class="focus"></span>
-                    </div>
-
-                    <div class="input-field">
-                        <input
-                            type="tel"
-                            id="number"
-                            name="number"
-                            placeholder="Mobile Number"
-                            autocomplete="tel"
-                        >
-                        <span class="focus"></span>
-                    </div>
-
-                </div>
-
-
-                <!-- Subject -->
-                <div class="input-box">
-
-                    <div class="input-field full-width">
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="Project Subject"
-                            required
-                        >
-                        <span class="focus"></span>
-                    </div>
-
-                </div>
-
-
-                <!-- Message -->
-                <div class="textarea-field">
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="7"
-                        placeholder="Tell me about your project..."
-                        required
-                    ></textarea>
-
-                    <span class="focus"></span>
-
-                </div>
-
-
-                <!-- Submit -->
-                <div class="btn-box btns">
-
-                    <button
-                        type="submit"
-                        class="btn"
-                        id="submit-btn"
-                    >
-                        Send Message
-                        <i class='bx bx-send'></i>
-                    </button>
-
-                </div>
-
-
-                <!-- Form Status -->
-                <p
-                    id="form-status"
-                    class="form-status"
-                    aria-live="polite">
-                </p>
-
-            </form>
-
+            <!-- Form Status -->
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
         </div>
+      </div>
+    </section>
 
-    </div>
-
-</section>
-
-<!-- Footer -->
-<footer class="footer">
-
-    <div class="footer-container">
-
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
         <!-- Footer Brand -->
         <div class="footer-brand">
-            <a href="#home" class="footer-logo">
-                Billionaire-<span>Developer</span>
-            </a>
+          <a href="#home" class="footer-logo">
+            Billionaire-<span>Developer</span>
+          </a>
 
-            <p>
-                Building modern, reliable, and scalable digital
-                solutions that turn ideas into reality.
-            </p>
+          <p>
+            Building modern, reliable, and scalable digital solutions that turn
+            ideas into reality.
+          </p>
         </div>
-
 
         <!-- Footer Navigation -->
         <div class="footer-links">
+          <h3>Quick Links</h3>
 
-            <h3>Quick Links</h3>
-
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#experience">Experience</a>
-            <a href="#contact">Contact</a>
-
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
         </div>
-
 
         <!-- Footer Socials -->
         <div class="footer-social">
+          <h3>Connect With Me</h3>
 
-            <h3>Connect With Me</h3>
+          <div class="footer-social-links">
+            <a
+              href="https://github.com/Billionaire-Developer"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <i class="bx bxl-github"></i>
+            </a>
 
-            <div class="footer-social-links">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
 
-                <a
-                    href="https://github.com/Billionaire-Developer"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="GitHub"
-                >
-                    <i class='bx bxl-github'></i>
-                </a>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Twitter"
+            >
+              <i class="bx bxl-twitter"></i>
+            </a>
 
-                <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="LinkedIn"
-                >
-                    <i class='bx bxl-linkedin'></i>
-                </a>
-
-                <a
-                    href="#"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label="Twitter"
-                >
-                    <i class='bx bxl-twitter'></i>
-                </a>
-
-                <a
-                    href="mailto:Lawanijeremiah23@gmail.com"
-                    aria-label="Email"
-                >
-                    <i class='bx bx-envelope'></i>
-                </a>
-
-            </div>
-
+            <a href="mailto:Lawanijeremiah23@gmail.com" aria-label="Email">
+              <i class="bx bx-envelope"></i>
+            </a>
+          </div>
         </div>
+      </div>
 
-    </div>
-
-
-    <!-- Footer Bottom -->
-    <div class="footer-bottom">
-
-        <p>
-            &copy; 2026 Billionaire-Developer.
-            All Rights Reserved.
-        </p>
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 Billionaire-Developer. All Rights Reserved.</p>
 
         <a href="#home" class="iconTop" aria-label="Back to top">
-            <i class='bx bx-up-arrow-alt'></i>
+          <i class="bx bx-up-arrow-alt"></i>
         </a>
-
-    </div>
-
-</footer>
-
+      </div>
+    </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

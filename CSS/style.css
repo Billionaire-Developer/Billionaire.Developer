@@ -2755,6 +2755,737 @@ span{
     }
 }
 
+/* Excellent Hire — match the GridSentinel case study header */
+
+#excellent-hire-case-study .case-study-header {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+#excellent-hire-case-study .case-study-header .section-label {
+    text-align: center;
+}
+
+#excellent-hire-case-study .case-study-header .heading {
+    width: 100%;
+    margin: 10px auto 14px;
+    text-align: center;
+}
+
+#excellent-hire-case-study .case-study-header .section-description {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.8;
+}
+
+/* Center the action buttons */
+#excellent-hire-case-study .case-study-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+    margin: 24px auto 0;
+}
+
+#excellent-hire-case-study .case-study-actions .case-study-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 46px;
+    padding: 12px 20px;
+    color: var(--main-color, #00f5a0);
+    background: var(--card-bg, #121923);
+    border: 1px solid var(--main-color, #00f5a0);
+    border-radius: 8px;
+    font-size: .92rem;
+    font-weight: 600;
+    line-height: 1.3;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background .25s ease,
+                color .25s ease,
+                transform .25s ease;
+}
+
+#excellent-hire-case-study .case-study-actions .case-study-button i {
+    font-size: 1.15rem;
+    line-height: 1;
+}
+
+#excellent-hire-case-study .case-study-actions .case-study-button:hover {
+    color: var(--bg-color, #080b10);
+    background: var(--main-color, #00f5a0);
+    transform: translateY(-2px);
+}
+
+#excellent-hire-case-study .case-study-actions .case-study-button:focus-visible {
+    outline: 2px solid var(--main-color, #00f5a0);
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    #excellent-hire-case-study .case-study-header {
+        margin-bottom: 28px;
+    }
+
+    #excellent-hire-case-study .case-study-header .heading {
+        font-size: 2rem;
+    }
+
+    #excellent-hire-case-study .case-study-header .section-description {
+        font-size: .95rem;
+    }
+
+    #excellent-hire-case-study .case-study-actions {
+        gap: 10px;
+    }
+
+    #excellent-hire-case-study .case-study-actions .case-study-button {
+        min-height: 44px;
+        padding: 11px 15px;
+        font-size: .86rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #excellent-hire-case-study .case-study-actions .case-study-button {
+        transition: none;
+    }
+
+    #excellent-hire-case-study .case-study-actions .case-study-button:hover {
+        transform: none;
+    }
+}
+
+
+/* Meridian Web Academy — compact case study */
+
+#meridian-case-study {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+#meridian-case-study .case-study-header {
+    max-width: 850px;
+    margin: 0 auto 36px;
+    text-align: center;
+}
+
+#meridian-case-study .case-study-header .section-label {
+    text-align: center;
+}
+
+#meridian-case-study .case-study-header .heading {
+    margin: 10px auto 14px;
+    text-align: center;
+}
+
+#meridian-case-study .case-study-header .section-description {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.8;
+    text-align: center;
+}
+
+#meridian-case-study .case-study-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+#meridian-case-study .case-study-block {
+    margin-top: 42px;
+}
+
+#meridian-case-study .case-study-block-heading {
+    margin-bottom: 22px;
+}
+
+#meridian-case-study .case-study-subheading {
+    margin-bottom: 10px;
+}
+
+#meridian-case-study .case-study-block-description {
+    max-width: 720px;
+    line-height: 1.7;
+}
+
+#meridian-case-study .case-study-overview,
+#meridian-case-study .engineering-decisions {
+    gap: 16px;
+}
+
+@media (max-width: 600px) {
+    #meridian-case-study {
+        padding-top: 44px;
+        padding-bottom: 44px;
+    }
+
+    #meridian-case-study .case-study-header .heading {
+        font-size: 2rem;
+    }
+
+    #meridian-case-study .case-study-actions {
+        gap: 10px;
+    }
+
+    #meridian-case-study .case-study-block {
+        margin-top: 32px;
+    }
+}
+
+/* ==========================================
+   MERIDIAN WEB ACADEMY — COMPACT LAYOUT FIX
+   ========================================== */
+
+#meridian-case-study {
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: 60px 24px;
+}
+
+/* Overview cards */
+#meridian-case-study .case-study-overview {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+#meridian-case-study .case-study-panel {
+    min-width: 0;
+    padding: 22px;
+    height: 100%;
+}
+
+#meridian-case-study .case-study-panel h3,
+#meridian-case-study .case-study-panel h4 {
+    margin: 0 0 10px;
+    line-height: 1.35;
+}
+
+#meridian-case-study .case-study-panel p {
+    margin: 0;
+    font-size: 0.94rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+/* Section headings */
+#meridian-case-study .case-study-block {
+    margin-top: 42px;
+}
+
+#meridian-case-study .case-study-block-heading {
+    margin-bottom: 20px;
+}
+
+#meridian-case-study .case-study-subheading {
+    margin: 6px 0 10px;
+    line-height: 1.3;
+}
+
+#meridian-case-study .case-study-block-description {
+    margin: 0;
+    max-width: 680px;
+    line-height: 1.7;
+}
+
+/* Feature and engineering cards */
+#meridian-case-study .engineering-decisions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+#meridian-case-study .decision-card {
+    min-width: 0;
+    height: 100%;
+    padding: 22px;
+}
+
+#meridian-case-study .decision-card h4 {
+    margin: 0 0 9px;
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+#meridian-case-study .decision-card p {
+    margin: 0 0 14px;
+    font-size: 0.93rem;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+#meridian-case-study .decision-tag {
+    display: inline-flex;
+    align-items: center;
+    margin-top: 4px;
+}
+
+/* Consistent spacing between feature number and title */
+#meridian-case-study .decision-number {
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+/* Responsive tablet layout */
+@media (max-width: 900px) {
+    #meridian-case-study .case-study-overview {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    #meridian-case-study .engineering-decisions {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    #meridian-case-study {
+        padding: 44px 18px;
+    }
+
+    #meridian-case-study .case-study-overview,
+    #meridian-case-study .engineering-decisions {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 12px;
+    }
+
+    #meridian-case-study .case-study-panel,
+    #meridian-case-study .decision-card {
+        padding: 18px;
+    }
+
+    #meridian-case-study .case-study-block {
+        margin-top: 32px;
+    }
+
+    #meridian-case-study .case-study-block-heading {
+        margin-bottom: 16px;
+    }
+}
+
+
+/* ================================================
+   EDUCATION & PROFESSIONAL JOURNEY
+================================================ */
+
+.experience {
+  position: relative;
+  padding: var(--section-padding, 100px) 0;
+  background: var(--bg-color, #080b10);
+  color: var(--text-color, #f1f5f9);
+  overflow: hidden;
+}
+
+.experience .experience-container {
+  width: min(1180px, calc(100% - 40px));
+  margin: 0 auto;
+}
+
+/* Section header */
+
+.experience .experience-header {
+  max-width: 760px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.experience .experience-label,
+.experience .experience-column-label {
+  margin: 0 0 10px;
+  color: var(--main-color, #00f5a0);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+
+.experience .experience-heading {
+  margin: 0 0 16px;
+  color: var(--text-color, #f1f5f9);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.experience .experience-heading span {
+  color: var(--main-color, #00f5a0);
+}
+
+.experience .experience-description {
+  max-width: 680px;
+  margin: 0 auto;
+  color: var(--muted-color, #a0adbd);
+  font-size: 0.97rem;
+  line-height: 1.85;
+}
+
+/* Two-column layout */
+
+.experience .experience-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 32px;
+}
+
+.experience .experience-column {
+  min-width: 0;
+}
+
+.experience .experience-column-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 24px;
+  padding: 20px;
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.09));
+  border-radius: var(--radius-md, 16px);
+  background: var(--second-bg-color, #10151d);
+}
+
+.experience .experience-header-icon {
+  display: grid;
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  place-items: center;
+  border: 1px solid rgba(0, 245, 160, 0.2);
+  border-radius: 12px;
+  background: rgba(0, 245, 160, 0.07);
+  color: var(--main-color, #00f5a0);
+  font-size: 1.5rem;
+}
+
+.experience .experience-column-label {
+  margin-bottom: 4px;
+  font-size: 0.68rem;
+}
+
+.experience .experience-column-header h3 {
+  margin: 0;
+  color: var(--text-color, #f1f5f9);
+  font-size: 1.15rem;
+  font-weight: 750;
+  line-height: 1.4;
+}
+
+/* Card list */
+
+.experience .experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Individual cards */
+
+.experience .experience-card {
+  min-width: 0;
+  margin: 0;
+  padding: 24px;
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.09));
+  border-radius: var(--radius-md, 16px);
+  background: var(--second-bg-color, #10151d);
+  transition:
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.experience .experience-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(0, 245, 160, 0.35);
+  background: var(--card-hover, #17212d);
+}
+
+.experience .experience-card.experience-featured {
+  border-color: rgba(0, 245, 160, 0.35);
+  background:
+    linear-gradient(
+      140deg,
+      rgba(0, 245, 160, 0.055),
+      transparent 60%
+    ),
+    var(--second-bg-color, #10151d);
+}
+
+/* Dates and status */
+
+.experience .experience-card-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 17px;
+}
+
+.experience .experience-date {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 7px 10px;
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.09));
+  border-radius: 7px;
+  background: var(--card-bg, #121923);
+  color: var(--muted-color, #a0adbd);
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.experience .experience-date i {
+  color: var(--main-color, #00f5a0);
+  font-size: 0.9rem;
+}
+
+.experience .experience-status {
+  padding: 6px 9px;
+  border-radius: 6px;
+  background: rgba(0, 245, 160, 0.08);
+  color: var(--main-color, #00f5a0);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Card text */
+
+.experience .experience-card h4 {
+  margin: 0 0 8px;
+  color: var(--text-color, #f1f5f9);
+  font-size: 1.1rem;
+  font-weight: 750;
+  line-height: 1.5;
+}
+
+.experience .experience-institution {
+  margin: 0 0 14px;
+  color: var(--main-color, #00f5a0);
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.experience .experience-card-description {
+  margin: 0;
+  color: var(--muted-color, #a0adbd);
+  font-size: 0.88rem;
+  line-height: 1.8;
+}
+
+/* Responsibility list */
+
+.experience .experience-responsibilities {
+  display: grid;
+  gap: 10px;
+  margin: 17px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.experience .experience-responsibilities li {
+  position: relative;
+  padding-left: 19px;
+  color: var(--muted-color, #a0adbd);
+  font-size: 0.85rem;
+  line-height: 1.75;
+}
+
+.experience .experience-responsibilities li::before {
+  position: absolute;
+  top: 0.72em;
+  left: 1px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--main-color, #00f5a0);
+  content: "";
+}
+
+/* Featured projects */
+
+.experience .experience-projects {
+  display: grid;
+  gap: 9px;
+  margin-top: 22px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border-color, rgba(255, 255, 255, 0.09));
+}
+
+.experience .experience-projects-label {
+  margin: 0 0 3px;
+  color: var(--muted-color, #a0adbd);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.experience .experience-project-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 12px;
+  border: 1px solid var(--border-color, rgba(255, 255, 255, 0.09));
+  border-radius: 8px;
+  background: var(--card-bg, #121923);
+  color: var(--text-color, #f1f5f9);
+  font-size: 0.83rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.experience .experience-project-link i {
+  flex-shrink: 0;
+  color: var(--main-color, #00f5a0);
+  font-size: 1rem;
+}
+
+.experience .experience-project-link:hover {
+  border-color: var(--main-color, #00f5a0);
+  background: rgba(0, 245, 160, 0.05);
+  color: var(--main-color, #00f5a0);
+}
+
+/* Technology and skill tags */
+
+.experience .experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 20px;
+}
+
+.experience .experience-tags span {
+  padding: 6px 9px;
+  border: 1px solid rgba(0, 245, 160, 0.15);
+  border-radius: 6px;
+  background: rgba(0, 245, 160, 0.045);
+  color: var(--main-color, #00f5a0);
+  font-size: 0.7rem;
+  font-weight: 550;
+  line-height: 1.4;
+}
+
+/* Certificate card */
+
+.experience .experience-certificate {
+  border-style: dashed;
+}
+
+/* Keyboard accessibility */
+
+.experience .experience-project-link:focus-visible {
+  outline: 2px solid var(--main-color, #00f5a0);
+  outline-offset: 3px;
+}
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .experience .experience-grid {
+    gap: 22px;
+  }
+
+  .experience .experience-card {
+    padding: 20px;
+  }
+
+  .experience .experience-column-header {
+    padding: 16px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 680px) {
+  .experience {
+    padding: 70px 0;
+  }
+
+  .experience .experience-container {
+    width: calc(100% - 32px);
+  }
+
+  .experience .experience-header {
+    margin-bottom: 38px;
+  }
+
+  .experience .experience-grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 38px;
+  }
+
+  .experience .experience-column-header {
+    margin-bottom: 18px;
+  }
+
+  .experience .experience-list {
+    gap: 15px;
+  }
+
+  .experience .experience-card {
+    padding: 21px;
+  }
+
+  .experience .experience-heading {
+    font-size: clamp(1.9rem, 7vw, 2.5rem);
+  }
+}
+
+@media (max-width: 380px) {
+  .experience .experience-container {
+    width: calc(100% - 24px);
+  }
+
+  .experience .experience-card {
+    padding: 17px;
+  }
+
+  .experience .experience-card h4 {
+    font-size: 1rem;
+  }
+
+  .experience .experience-card-description,
+  .experience .experience-responsibilities li {
+    font-size: 0.82rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experience .experience-card,
+  .experience .experience-project-link {
+    transition: none;
+  }
+
+  .experience .experience-card:hover {
+    transform: none;
+  }
+}
+
+
 
 
 
