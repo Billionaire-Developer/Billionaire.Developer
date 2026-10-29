@@ -8451,7 +8451,7 @@ span{
     /* Navigation */
     .navbar a,
     .nav-menu a {
-        font-size: 0.95rem;
+        font-size: 1rem;
     }
 
     /* Labels and supporting text */
@@ -8460,20 +8460,20 @@ span{
     .experience-label,
     .project-category,
     .experience-date {
-        font-size: 0.82rem;
+        font-size: 1rem;
     }
 
     /* Technology tags */
     .project-tech span,
     .experience-tags span {
-        font-size: 0.78rem;
+        font-size: 1rem;
     }
 
     /* Buttons */
     button,
     .btn,
     .button {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 }
 
@@ -8483,7 +8483,7 @@ span{
     body,
     p,
     li {
-        font-size: 14.5px;
+        font-size: 15.5px;
     }
 
 }
