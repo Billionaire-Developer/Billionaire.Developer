@@ -8406,3 +8406,84 @@ span{
     }
 
 }
+
+
+
+
+
+
+/* =========================================
+   MOBILE TYPOGRAPHY IMPROVEMENT
+   Desktop remains unchanged
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* General text */
+    body {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    p,
+    li {
+        font-size: 15px;
+        line-height: 1.75;
+    }
+
+    /* Main headings */
+    h1 {
+        font-size: clamp(2rem, 7vw, 2.7rem);
+    }
+
+    h2 {
+        font-size: clamp(1.7rem, 6vw, 2.2rem);
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    h4 {
+        font-size: 1.05rem;
+    }
+
+    /* Navigation */
+    .navbar a,
+    .nav-menu a {
+        font-size: 0.95rem;
+    }
+
+    /* Labels and supporting text */
+    small,
+    .section-label,
+    .experience-label,
+    .project-category,
+    .experience-date {
+        font-size: 0.82rem;
+    }
+
+    /* Technology tags */
+    .project-tech span,
+    .experience-tags span {
+        font-size: 0.78rem;
+    }
+
+    /* Buttons */
+    button,
+    .btn,
+    .button {
+        font-size: 0.9rem;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 380px) {
+
+    body,
+    p,
+    li {
+        font-size: 14.5px;
+    }
+
+}
